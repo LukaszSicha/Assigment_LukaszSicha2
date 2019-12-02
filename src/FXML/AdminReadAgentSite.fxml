@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="500.0" prefWidth="550.0" style="-fx-background-color: white; -fx-border-color: black; -fx-border-width: 2px;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="JavaClasses.RegisterAgentController">
+    <children>
+        <Text layoutX="14.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Admin update Agent">
+            <font>
+                <Font size="22.0" />
+            </font>
+        </Text>
+        <Button layoutX="25.0" layoutY="459.0" mnemonicParsing="false" onAction="#handleRegisterBtn" style="-fx-background-color: #e6e2da; -fx-border-color: black;" text="Update" />
+        <TextField fx:id="username" layoutX="116.0" layoutY="184.0" />
+        <Text layoutX="19.0" layoutY="201.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username" />
+        <Text layoutX="21.0" layoutY="238.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password" />
+        <TextField fx:id="email" layoutX="114.0" layoutY="260.0" />
+        <Text layoutX="29.0" layoutY="277.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email" />
+        <TextField fx:id="firstname" layoutX="115.0" layoutY="298.0" />
+        <Text layoutX="27.0" layoutY="315.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name" />
+        <TextField fx:id="surname" layoutX="114.0" layoutY="332.0" />
+        <Text layoutX="16.0" layoutY="349.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Last Name" />
+        <TextArea fx:id="txtAreaFeedback" layoutX="334.0" layoutY="88.0" prefHeight="282.0" prefWidth="197.0" />
+        <PasswordField fx:id="password" layoutX="116.0" layoutY="221.0" />
+        <Text layoutX="357.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Information Area">
+            <font>
+                <Font size="22.0" />
+            </font>
+        </Text>
+        <Button layoutX="465.0" layoutY="15.0" mnemonicParsing="false" onAction="#handleHomeBtn" style="-fx-background-color: #e6e2da; -fx-border-color: black;" text="Log Out" />
+        <Button layoutX="97.0" layoutY="459.0" mnemonicParsing="false" onAction="#handleButtonAdminBack" style="-fx-background-color: #e6e2da; -fx-border-color: black;" text="Back" />
+        <TextField fx:id="txtphoneNumber" layoutX="116.0" layoutY="369.0" />
+        <Text layoutX="16.0" layoutY="386.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Phone" />
+        <Button layoutX="401.0" layoutY="389.0" mnemonicParsing="false" onAction="#listAllAgentsUpdate" style="-fx-background-color: #e6e2da; -fx-border-color: black;" text="List Agents" />
+        <TextField fx:id="agentNumber" layoutX="72.0" layoutY="86.0" />
+        <Text layoutX="102.0" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Agent ID to read" />
+        <Button fx:id="readButton" disable="true" layoutX="231.0" layoutY="86.0" mnemonicParsing="false" onAction="#handleReadAgentBtn" text="Button" />
+    </children>
+</AnchorPane>

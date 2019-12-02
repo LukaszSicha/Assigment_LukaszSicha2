@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="500.0" prefWidth="550.0" style="-fx-background-color: white; -fx-border-color: black; -fx-border-width: 2px;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="JavaClasses.RegisterAdminController">
+    <children>
+        <Text layoutX="16.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Register Admin">
+            <font>
+                <Font size="22.0" />
+            </font>
+        </Text>
+        <Button layoutX="15.0" layoutY="449.0" mnemonicParsing="false" onAction="#handleRegisterBtn" style="-fx-background-color: #e6e2da; -fx-border-color: black;" text="Register" />
+        <TextField fx:id="username" layoutX="130.0" layoutY="104.0" />
+        <Text layoutX="33.0" layoutY="121.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username" />
+        <Text layoutX="35.0" layoutY="158.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password" />
+        <TextField fx:id="email" layoutX="130.0" layoutY="216.0" />
+        <Text layoutX="45.0" layoutY="233.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email" />
+        <TextField fx:id="firstname" layoutX="131.0" layoutY="254.0" />
+        <Text layoutX="43.0" layoutY="271.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name" />
+        <TextField fx:id="surname" layoutX="130.0" layoutY="288.0" />
+        <Text layoutX="32.0" layoutY="305.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Last Name" />
+        <ImageView fitHeight="200.0" fitWidth="200.0" layoutX="340.0" layoutY="4.0">
+            <image>
+                <Image url="@../../../FilesFor%20Assigment/house1.png" />
+            </image>
+        </ImageView>
+        <Text layoutX="47.0" layoutY="342.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Phone" />
+        <Text layoutX="14.0" layoutY="195.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Repeat Password" />
+        <TextArea fx:id="txtAreaFeedback" layoutX="283.0" layoutY="400.0" prefHeight="42.0" prefWidth="233.0" />
+        <PasswordField fx:id="password" layoutX="130.0" layoutY="141.0" />
+        <PasswordField fx:id="repeat_password" layoutX="130.0" layoutY="178.0" />
+      <Text layoutX="333.0" layoutY="392.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Information Area">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Text>
+      <Button layoutX="85.0" layoutY="449.0" mnemonicParsing="false" onAction="#handleHomeBtn" style="-fx-background-color: #e6e2da; -fx-border-color: black;" text="Back" />
+      <TextField fx:id="phoneNumbertxt" layoutX="130.0" layoutY="325.0" />
+    </children>
+</AnchorPane>
