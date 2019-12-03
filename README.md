@@ -1,3 +1,3 @@
 # Assigment_LukaszSicha2  
-My second programmin assigment  
+My second programming assigment  
 final result : TBD / 100  
