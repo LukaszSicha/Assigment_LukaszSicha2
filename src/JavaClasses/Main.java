@@ -20,18 +20,18 @@ public class Main extends Application {
     public void start(Stage primaryStage) throws Exception{
         root = (AnchorPane)FXMLLoader.load(getClass().getResource("/FXML/Anchor.fxml"));
 
-        anchor.add((AnchorPane)FXMLLoader.load(getClass().getResource("SaleSite.fxml"))); //index 0
-        anchor.add((AnchorPane)FXMLLoader.load(getClass().getResource("LoginAgent.fxml"))); //index 1
-        anchor.add((AnchorPane)FXMLLoader.load(getClass().getResource("LoginAdmin.fxml"))); //index 2
-        anchor.add((AnchorPane)FXMLLoader.load(getClass().getResource("RegisterAdmin.fxml"))); //index 3
-        anchor.add((AnchorPane)FXMLLoader.load(getClass().getResource("RegisterAgent.fxml"))); //index 4
-        anchor.add((AnchorPane)FXMLLoader.load(getClass().getResource("ViewerSaleSite.fxml"))); //index 5
-        anchor.add((AnchorPane)FXMLLoader.load(getClass().getResource("AdminSaleSite.fxml"))); //index 6
-        anchor.add((AnchorPane)FXMLLoader.load(getClass().getResource("AgentSaleSite.fxml"))); //index 7
-        anchor.add((AnchorPane)FXMLLoader.load(getClass().getResource("AgentCreateSaleSite.fxml"))); //index 8
-        anchor.add((AnchorPane)FXMLLoader.load(getClass().getResource("AgentUpdateSaleSite.fxml"))); //index 9
-        anchor.add((AnchorPane)FXMLLoader.load(getClass().getResource("AdminCreateAgentSite.fxml"))); //index 10
-        anchor.add((AnchorPane)FXMLLoader.load(getClass().getResource("AdminReadAgentSite.fxml"))); //index 11
+        anchor.add((AnchorPane)FXMLLoader.load(getClass().getResource("/FXML/SaleSite.fxml"))); //index 0
+        anchor.add((AnchorPane)FXMLLoader.load(getClass().getResource("/FXML/LoginAgent.fxml"))); //index 1
+        anchor.add((AnchorPane)FXMLLoader.load(getClass().getResource("/FXML/LoginAdmin.fxml"))); //index 2
+        anchor.add((AnchorPane)FXMLLoader.load(getClass().getResource("/FXML/RegisterAdmin.fxml"))); //index 3
+        anchor.add((AnchorPane)FXMLLoader.load(getClass().getResource("/FXML/RegisterAgent.fxml"))); //index 4
+        anchor.add((AnchorPane)FXMLLoader.load(getClass().getResource("/FXML/ViewerSaleSite.fxml"))); //index 5
+        anchor.add((AnchorPane)FXMLLoader.load(getClass().getResource("/FXML/AdminSaleSite.fxml"))); //index 6
+        anchor.add((AnchorPane)FXMLLoader.load(getClass().getResource("/FXML/AgentSaleSite.fxml"))); //index 7
+        anchor.add((AnchorPane)FXMLLoader.load(getClass().getResource("/FXML/AgentCreateSaleSite.fxml"))); //index 8
+        anchor.add((AnchorPane)FXMLLoader.load(getClass().getResource("/FXML/AgentUpdateSaleSite.fxml"))); //index 9
+        anchor.add((AnchorPane)FXMLLoader.load(getClass().getResource("/FXML/AdminCreateAgentSite.fxml"))); //index 10
+        anchor.add((AnchorPane)FXMLLoader.load(getClass().getResource("/FXML/AdminReadAgentSite.fxml"))); //index 11
 
         root.getChildren().add(anchor.get(0));
 

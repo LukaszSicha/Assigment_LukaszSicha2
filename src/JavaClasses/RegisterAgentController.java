@@ -5,6 +5,7 @@ import com.thoughtworks.xstream.io.xml.DomDriver;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
+import JavaClasses.Agent;
 
 import java.io.*;
 import java.time.LocalDate;
@@ -51,56 +52,46 @@ public class RegisterAgentController {
         }
     }
 
-    private boolean register(String username, String password, String name, String surname, String email, int txtphoneNumber) {
-        MyListOfObjects agents;
-        XStream xstream = new XStream(new DomDriver());
-        try {
-            ObjectInputStream is = xstream.createObjectInputStream(new FileReader("agents.xml"));
-            agents = (MyListOfObjects) is.readObject();
-            is.close();
-        }
-        catch(FileNotFoundException e) {
-            agents =  new MyListOfObjects();
-            txtAreaFeedback.setText("New Password File");
-        }
-        catch (Exception e) {
-            txtAreaFeedback.setText("Error accessing Password File");
-            return false;
-        }
+    public boolean register(String username, String password, String agentId, String location, String name, int phoneNumber){
+        MyListOfObjects agents = new MyListOfObjects();
+        if(agents.isEmpty()) {
+            try {
+                try{
+                    XStream xstream = new XStream(new DomDriver());
+                    ObjectInputStream is = xstream.createObjectInputStream
+                            (new FileReader("saveFiles/agents.xml"));
+                    agents = (MyListOfObjects) is.readObject();
+                    is.close();
+                }
+                catch(Exception e){
+                    txtAreaFeedback.setText("Cannot Load Agents");
+                }
 
-        try {
-            Agent agent = new Agent(username, password, name, surname, email, txtphoneNumber);
-            agents.add(agent);
-            Main.setAgent(agent);
-            ObjectOutputStream out = xstream.createObjectOutputStream(new FileWriter("agents.xml"));
-            out.writeObject(agents);
-            out.close();
+                Agent agentLocal = new Agent(username, password, agentId, location, name, phoneNumber);
+                XStream xstream = new XStream(new DomDriver());
+                agents.add(agentLocal);
+                ObjectOutputStream out = xstream.createObjectOutputStream(new FileWriter("agents.xml"));
+                out.writeObject(agents);
+                out.close();
+                return true;
+            } catch (Exception e) {
+                return false;
+            }
         }
-        catch (Exception e) {
-            txtAreaFeedback.setText("Error writing to Password File");
-            return false;
+        else {
+            try {
+                Agent agentLocal = new Agent(username,  password, agentId, location, name, phoneNumber);
+                XStream xstream = new XStream(new DomDriver());
+                agents.add(agentLocal);
+                ObjectOutputStream out = xstream.createObjectOutputStream(new FileWriter("agents.xml"));
+                out.writeObject(agents);
+                out.close();
+                return true;
+            } catch (Exception t) {
+                return false;
+            }
         }
-        return true;
     }
-
-
-    /*@FXML
-    public void saveAgent() throws Exception {
-        XStream xstream = new XStream(new DomDriver());
-        ObjectOutputStream out = xstream.createObjectOutputStream
-                (new FileWriter("propertyFile.xml"));
-        out.writeObject(agents);
-        out.close();
-    }
-
-    @FXML
-    public void loadAgent() throws Exception {
-        XStream xstream = new XStream(new DomDriver());
-        ObjectInputStream is = xstream.createObjectInputStream
-                (new FileReader("agents.xml"));
-        agents = (ArrayList<Agent>) is.readObject();
-        is.close();
-    }*/
 
 
 
@@ -140,19 +131,13 @@ public class RegisterAgentController {
         Main.set_pane(0);
     }
 
-    public void handleButtonAdminCreate(ActionEvent e) throws Exception {
-        Main.set_pane(10);
-    }
 
     public void handleButtonAdminBack(ActionEvent e) throws Exception {
         Main.set_pane(6);
     }
 
-    public void handleButtonAdminRead(ActionEvent e) throws Exception {
-        Main.set_pane(11);
-    }
 
-   /* public void handleDeleteAgent(ActionEvent e) throws Exception{
+    /*public void handleDeleteAgent(ActionEvent e) throws Exception{
         String username = username2.getText();
         agentys.deleteAgents(username);
         txtAreaFeedback.setText("Agent deleted sucessfully");

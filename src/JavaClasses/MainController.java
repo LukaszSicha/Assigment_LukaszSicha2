@@ -17,6 +17,17 @@ import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 import javafx.scene.control.ComboBox;
 
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
+import javafx.fxml.Initializable;
+import javafx.scene.control.*;
+import javafx.scene.control.cell.PropertyValueFactory;
+
+import java.net.URL;
+import java.util.ResourceBundle;
+
 public class MainController implements Initializable {
 
     protected PropertyStore property;
@@ -52,6 +63,10 @@ public class MainController implements Initializable {
     private TextArea txtfeedback;
     @FXML
     private TextArea txtfeedback1;
+    @FXML private TableColumn<Property, Integer> idColumn;  // notice the use of the wrapper class
+    @FXML private TableColumn<Property, String> nameColumn;
+    @FXML private TableColumn<Property, String> descriptionColumn;
+    @FXML private TableColumn<Property, Double> costColumn;
 
 
 
@@ -64,10 +79,11 @@ public class MainController implements Initializable {
     public void initialize(URL location, ResourceBundle resources) {
         property = new PropertyStore();
 
-        comboCounty.setItems(county);
-        comboMinPrice.setItems(minPrice);
-        comboMaxPrice.setItems(maxPrice);
-        comboPropertyType.setItems(propertyType);
+
+        idColumn.setCellValueFactory(new PropertyValueFactory<Property, Integer>("id"));
+        nameColumn.setCellValueFactory(new PropertyValueFactory<Property, String>("name"));
+        descriptionColumn.setCellValueFactory(new PropertyValueFactory<Property, String>("description"));
+        costColumn.setCellValueFactory(new PropertyValueFactory<Property, Double>("cost"));
 
         comboCounty.setValue("Any");
         comboMinPrice.setValue("No Min");
@@ -164,6 +180,7 @@ public class MainController implements Initializable {
 
 
 
+
     public void handleButtonBackToAgentSite(ActionEvent e) throws Exception{
         Main.set_pane(7);
     }
@@ -182,141 +199,7 @@ public class MainController implements Initializable {
     }*/
 
     public void handleSearchButton(ActionEvent e) throws Exception {
-        if (property.propertiesArray.size() == 0) {
-            try {
-                property.loadProperty();
-            } catch (Exception z) {
-                txtfeedback.setText("No Properties to Load");
-            }
-        }
 
-        if (comboMinPrice.getValue() == "No Min" && comboMaxPrice.getValue() == "No Max" && comboPropertyType.getValue() != "Any" && comboCounty.getValue() != "Any") {
-            StrPropertyType = comboPropertyType.getValue();
-            StrCounty = comboCounty.getValue();
-            txtfeedback.setText(property.listAllPropertiesSearchCountyPropertyType(StrCounty, StrPropertyType));
-        }
-
-        if (comboMaxPrice.getValue() == "No Max" && comboPropertyType.getValue() == "Any" && comboMinPrice.getValue() != "No Min" && comboCounty.getValue() != "Any") {
-            DbMin = comboMinPrice.getValue();
-            double minimumPrice = Double.parseDouble(DbMin);
-            StrCounty = comboCounty.getValue();
-            txtfeedback.setText(property.listAllPropertiesSearchCountyMin(StrCounty, minimumPrice));
-        }
-
-        if (comboMaxPrice.getValue() == "No Max" && comboPropertyType.getValue() == "Any" && comboMinPrice.getValue() == "No Min" && comboCounty.getValue() != "Any") {
-            StrCounty = comboCounty.getValue();
-            txtfeedback.setText(property.listAllPropertiesSearchCounty(StrCounty));
-        }
-
-        if (comboMaxPrice.getValue() != "No Max" && comboPropertyType.getValue() == "Any" && comboMinPrice.getValue() == "No Min" && comboCounty.getValue() != "Any") {
-            DbMax = comboMaxPrice.getValue();
-            double maximumPrice = Double.parseDouble(DbMax);
-            StrCounty = comboCounty.getValue();
-            txtfeedback.setText(property.listAllPropertiesSearchCountyMax(StrCounty, maximumPrice));
-        }
-
-        if (comboMaxPrice.getValue() != "No Max" && comboPropertyType.getValue() == "Any" && comboMinPrice.getValue() != "No Min" && comboCounty.getValue() != "Any") {
-            DbMax = comboMaxPrice.getValue();
-            double maximumPrice = Double.parseDouble(DbMax);
-            DbMin = comboMinPrice.getValue();
-            double minimumPrice = Double.parseDouble(DbMin);
-            StrCounty = comboCounty.getValue();
-            if (minimumPrice > maximumPrice) {
-                txtfeedback1.setText("Please Check you Minimum\nand Maximum values are correct");
-            } else {
-                txtfeedback.setText(property.listAllPropertiesSearchCountyMinMax(StrCounty, minimumPrice, maximumPrice));
-            }
-        }
-
-        if (comboMaxPrice.getValue() != "No Max" && comboPropertyType.getValue() != "Any" && comboMinPrice.getValue() != "No Min" && comboCounty.getValue() != "Any") {
-            DbMax = comboMaxPrice.getValue();
-            double maximumPrice = Double.parseDouble(DbMax);
-            DbMin = comboMinPrice.getValue();
-            double minimumPrice = Double.parseDouble(DbMin);
-            if (minimumPrice > maximumPrice) {
-                txtfeedback.setText("Please Check you Minimum\nand Maximum values are correct");
-            } else {
-                StrPropertyType = comboPropertyType.getValue();
-                StrCounty = comboCounty.getValue();
-                txtfeedback.setText(property.listAllPropertiesSearchCountyMinMaxType(StrCounty, minimumPrice, maximumPrice, StrPropertyType));
-            }
-        }
-
-        if (comboMaxPrice.getValue() != "No Max" && comboPropertyType.getValue() == "Any" && comboMinPrice.getValue() != "No Min" && comboCounty.getValue() == "Any") {
-            DbMax = comboMaxPrice.getValue();
-            double maximumPrice = Double.parseDouble(DbMax);
-            DbMin = comboMinPrice.getValue();
-            double minimumPrice = Double.parseDouble(DbMin);
-            if (minimumPrice > maximumPrice) {
-                txtfeedback1.setText("Please Check you Minimum\nand Maximum values are correct");
-            } else {
-                txtfeedback.setText(property.listAllPropertiesSearchMinMax(minimumPrice, maximumPrice));
-            }
-        }
-
-        if (comboMaxPrice.getValue() != "No Max" && comboPropertyType.getValue() != "Any" && comboMinPrice.getValue() != "No Min" && comboCounty.getValue() == "Any") {
-            DbMax = comboMaxPrice.getValue();
-            double maximumPrice = Double.parseDouble(DbMax);
-            DbMin = comboMinPrice.getValue();
-            double minimumPrice = Double.parseDouble(DbMin);
-            if (minimumPrice > maximumPrice) {
-                txtfeedback1.setText("Please Check you Minimum\nand Maximum values are correct");
-            } else {
-                StrPropertyType = comboPropertyType.getValue();
-                txtfeedback.setText(property.listAllPropertiesSearchMinMaxType(minimumPrice, maximumPrice,StrPropertyType));
-            }
-        }
-
-        if (comboMaxPrice.getValue() == "No Max" && comboPropertyType.getValue() != "Any" && comboMinPrice.getValue() != "No Min" && comboCounty.getValue() == "Any") {
-            DbMin = comboMinPrice.getValue();
-            double minimumPrice = Double.parseDouble(DbMin);
-            StrPropertyType = comboPropertyType.getValue();
-            txtfeedback.setText(property.listAllPropertiesSearchMinType(minimumPrice, StrPropertyType));
-        }
-
-        if (comboMaxPrice.getValue() != "No Max" && comboPropertyType.getValue() != "Any" && comboMinPrice.getValue() == "No Min" && comboCounty.getValue() == "Any") {
-            DbMax = comboMaxPrice.getValue();
-            double maximumPrice = Double.parseDouble(DbMax);
-            StrPropertyType = comboPropertyType.getValue();
-            txtfeedback.setText(property.listAllPropertiesSearchMaxType(maximumPrice, StrPropertyType));
-        }
-
-        if (comboMaxPrice.getValue() != "No Max" && comboPropertyType.getValue() != "Any" && comboMinPrice.getValue() == "No Min" && comboCounty.getValue() != "Any") {
-            DbMax = comboMaxPrice.getValue();
-            double maximumPrice = Double.parseDouble(DbMax);
-            StrPropertyType = comboPropertyType.getValue();
-            StrCounty = comboCounty.getValue();
-            txtfeedback.setText(property.listAllPropertiesSearchCountyMaxType(StrCounty,maximumPrice, StrPropertyType));
-        }
-
-        if (comboMaxPrice.getValue() != "No Max" && comboPropertyType.getValue() == "Any" && comboMinPrice.getValue() == "No Min" && comboCounty.getValue() == "Any") {
-            DbMax = comboMaxPrice.getValue();
-            double maximumPrice = Double.parseDouble(DbMax);
-            txtfeedback.setText(property.listAllPropertiesSearchMax(maximumPrice));
-        }
-
-        if (comboMaxPrice.getValue() == "No Max" && comboPropertyType.getValue() == "Any" && comboMinPrice.getValue() != "No Min" && comboCounty.getValue() == "Any") {
-            StrPropertyType = comboPropertyType.getValue();
-            txtfeedback.setText(property.listAllPropertiesSearchType(StrPropertyType));
-        }
-
-        if (comboMaxPrice.getValue() == "No Max" && comboPropertyType.getValue() != "Any" && comboMinPrice.getValue() != "No Min" && comboCounty.getValue() != "Any") {
-            DbMin = comboMinPrice.getValue();
-            double minimumPrice = Double.parseDouble(DbMin);
-            StrPropertyType = comboPropertyType.getValue();
-            StrCounty = comboCounty.getValue();
-            txtfeedback.setText(property.listAllPropertiesSearchCountyMinType(StrCounty,minimumPrice, StrPropertyType));
-        }
-
-        if(comboMaxPrice.getValue() == "No Max" && comboPropertyType.getValue() == "Any" && comboMinPrice.getValue() == "No Min" && comboCounty.getValue() == "Any"){
-            txtfeedback.setText(property.listAllPropertiesSmall());
-        }
-
-        if (comboMaxPrice.getValue() == "No Max" && comboPropertyType.getValue() == "Any" && comboMinPrice.getValue() != "No Min" && comboCounty.getValue() == "Any") {
-            DbMin = comboMinPrice.getValue();
-            double minimumPrice = Double.parseDouble(DbMin);
-            txtfeedback.setText(property.listAllPropertiesSearchMin(minimumPrice));
-        }
     }
 
 

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="500.0" prefWidth="550.0" style="-fx-background-color: white; -fx-border-color: black; -fx-border-width: 2px;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="JavaClasses.MainController">
+    <children>
+        <Text layoutX="14.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Agent Sale Menu">
+            <font>
+                <Font size="22.0" />
+            </font>
+        </Text>
+        <Button layoutX="445.0" layoutY="261.0" mnemonicParsing="false" onAction="#handleButtonCreatePropertySite" style="-fx-background-color: #e6e2da; -fx-border-color: black;" text="Create" />
+        <Button layoutX="443.0" layoutY="223.0" mnemonicParsing="false" onAction="#handleButtonViewPropertiesAgent" style="-fx-background-color: #e6e2da; -fx-border-color: black;" text="Update" />
+      <TextArea editable="false" layoutX="24.0" layoutY="408.0" prefHeight="53.0" prefWidth="233.0" />
+      <Button layoutX="421.0" layoutY="297.0" mnemonicParsing="false" onAction="#handleLoadBtn" style="-fx-background-color: #e6e2da; -fx-border-color: black;" text="View Properties" />
+      <Button layoutX="417.0" layoutY="334.0" mnemonicParsing="false" style="-fx-background-color: #e6e2da; -fx-border-color: black;" text="Delete Properties" />
+      <TextArea fx:id="txtfeedback" layoutX="24.0" layoutY="135.0" prefHeight="226.0" prefWidth="200.0" />
+      <Text layoutX="24.0" layoutY="127.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Properties">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Text>
+      <Text layoutX="24.0" layoutY="400.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Display">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Text>
+      <Button layoutX="470.0" layoutY="30.0" mnemonicParsing="false" onAction="#handleButtonBack" style="-fx-background-color: #e6e2da; -fx-border-color: black;" text="Log Out" />
+      <TextField layoutX="378.0" layoutY="435.0" />
+      <Text layoutX="377.0" layoutY="430.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Delete Property">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Text>
+    </children>
+</AnchorPane>

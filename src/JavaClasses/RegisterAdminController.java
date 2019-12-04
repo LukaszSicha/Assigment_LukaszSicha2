@@ -82,6 +82,14 @@ public class RegisterAdminController {
         Main.set_pane(0);
     }
 
+    public void handleButtonAdminRead(ActionEvent e) throws Exception {
+        Main.set_pane(11);
+    }
+
+    public void handleButtonAdminCreate(ActionEvent e) throws Exception {
+        Main.set_pane(10);
+    }
+
 
 
 }

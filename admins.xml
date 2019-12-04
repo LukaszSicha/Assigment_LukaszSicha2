@@ -1,0 +1,16 @@
+<object-stream>
+  <JavaClasses.MyListOfObjects>
+    <first>
+      <data class="JavaClasses.Admin">
+        <username>admin</username>
+        <password>1234</password>
+        <firstname>admin@gmail.com</firstname>
+        <surname>AdminSurename</surname>
+        <email>admin@gmail.com</email>
+        <phoneNumber>9986789</phoneNumber>
+      </data>
+      <outer-class reference="../.."/>
+    </first>
+    <length>1</length>
+  </JavaClasses.MyListOfObjects>
+</object-stream>

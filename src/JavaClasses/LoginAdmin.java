@@ -7,7 +7,7 @@ import com.thoughtworks.xstream.XStream;
 import com.thoughtworks.xstream.io.xml.DomDriver;
 
 import JavaClasses.MyListOfObjects;
-import JavaClasses.Agent;
+import JavaClasses.Admin;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -21,18 +21,12 @@ import javafx.scene.control.TextField;
 import javafx.scene.control.PasswordField;
 import javafx.stage.Stage;
 
-public class LoginAgent {
-    MyListOfObjects agents = new MyListOfObjects();
+public class LoginAdmin {
+    MyListOfObjects admins = new MyListOfObjects();
 
     @FXML private TextField username;
     @FXML private PasswordField password;
-    @FXML private TextField firstName;
-    @FXML private TextField surename;
-    @FXML private TextField email;
-    @FXML private TextField userType;
     @FXML private TextArea txtAreaFeedback;
-
-
 
 
     public void handleLoginBtn(ActionEvent e) throws Exception {
@@ -41,7 +35,7 @@ public class LoginAgent {
         }
         else if(login(username.getText(),password.getText())){
             txtAreaFeedback.setText("Successful Login");
-            Main.set_pane(7);
+            Main.set_pane(6);
         }
         else {
             txtAreaFeedback.setText("Un-Successful Login");
@@ -52,12 +46,12 @@ public class LoginAgent {
     private boolean login(String username, String password) {
         XStream xstream = new XStream(new DomDriver());
         try {
-            ObjectInputStream is = xstream.createObjectInputStream(new FileReader("agents.xml"));
-            agents = (MyListOfObjects) is.readObject();
+            ObjectInputStream is = xstream.createObjectInputStream(new FileReader("admins.xml"));
+            admins = (MyListOfObjects) is.readObject();
             is.close();
         }
         catch(FileNotFoundException e) {
-            agents =  new MyListOfObjects();
+            admins =  new MyListOfObjects();
             txtAreaFeedback.setText("Password File not located\n" + e);
             return false;
 
@@ -67,9 +61,9 @@ public class LoginAgent {
             return false;
         }
 
-        for (int i = 0; i < agents.size(); i++) {
-            Agent agentLogin = (Agent) agents.get(i);
-            if (agentLogin.getUsername().contains(username) && agentLogin.getPassword().contains(password))
+        for (int i = 0; i < admins.size(); i++) {
+            Admin adminLogin = (Admin) admins.get(i);
+            if (adminLogin.getUsername().contains(username) && adminLogin.getPassword().contains(password))
                 return true;
         }
         return false;
@@ -78,6 +72,4 @@ public class LoginAgent {
     public void handleButtonBack(ActionEvent e) throws Exception {
         Main.set_pane(0);
     }
-
-
 }
