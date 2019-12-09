@@ -121,6 +121,52 @@ public class PropertyStore {
         }
     }
 
+    public ArrayList<Property> SearchMethod(String propertyType, String location, String minPrice, String maxPrice) {
+
+        MyListOfObjects proportyLoading = new MyListOfObjects();
+        ArrayList<Property> tableProperty = new ArrayList<>();
+        try {
+            XStream xstream = new XStream(new DomDriver());
+            ObjectInputStream is = xstream.createObjectInputStream
+                    (new FileReader("propertyList.xml"));
+            proportyLoading = (MyListOfObjects) is.readObject();
+            is.close();
+        }
+        catch (Exception e){
+
+        }
+
+        for (int i = 0; i < proportyLoading.size(); i++) {
+            Property propertyAdd = (Property) proportyLoading.get(i);
+            tableProperty.add(propertyAdd);
+        }
+
+        if (propertyType == "Any" && location =="Any" && minPrice == "No Min" && maxPrice == "No Max"){
+            return tableProperty;
+        }
+        else {
+            ArrayList<Property> searchResults = new ArrayList<>();
+
+            for (int i = 0; i < tableProperty.size(); i++) {
+
+                if (propertyType.equals("Any") && tableProperty.get(i).getLocationGeneral().equals(location) && minPrice.equals("No Min") && maxPrice.equals("No Max")) {
+                    searchResults.add(tableProperty.get(i));
+                } else if (location.equals("Any") && tableProperty.get(i).getCategory().equals(propertyType) && minPrice.equals("No Min") && maxPrice.equals("No Max")) {
+                    searchResults.add(tableProperty.get(i));
+                } else if (tableProperty.get(i).getCategory().equals(propertyType) && tableProperty.get(i).getLocationGeneral().equals(location) && minPrice.equals("No Min") && maxPrice.equals("No Max")) {
+                    searchResults.add(tableProperty.get(i));
+                } else if (tableProperty.get(i).getCategory().equals(propertyType) && tableProperty.get(i).getLocationGeneral().equals(location) && minPrice != "No Min" && maxPrice.equals("No Max")) {
+                    int price = Integer.parseInt(Double.toString(tableProperty.get(i).getPrice()));
+                    if (price > Integer.parseInt(minPrice)) {
+                        searchResults.add(tableProperty.get(i));
+                    }
+                }
+
+            }
+            return searchResults;
+        }
+    }
+
 
 
 

@@ -24,7 +24,7 @@
         <ComboBox fx:id="comboPropertyType" layoutX="362.0" layoutY="106.0" prefHeight="27.0" prefWidth="106.0" style="-fx-background-color: #e6e2da; -fx-border-color: black;" />
         <Button layoutX="479.0" layoutY="106.0" mnemonicParsing="false" onAction="#handleSearchButton" style="-fx-background-color: #e6e2da; -fx-border-color: black;" text="Display" />
         <TextArea fx:id="txtfeedback1" editable="false" layoutX="299.0" layoutY="449.0" prefHeight="37.0" prefWidth="231.0" />
-      <TableView layoutX="25.0" layoutY="150.0" prefHeight="291.0" prefWidth="511.0">
+      <TableView fx:id="tableView" layoutX="25.0" layoutY="150.0" prefHeight="291.0" prefWidth="511.0">
         <columns>
           <TableColumn prefWidth="40.0" text="ID" />
           <TableColumn prefWidth="103.0" text="Price" />

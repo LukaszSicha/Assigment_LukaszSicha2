@@ -78,6 +78,8 @@ public class MainController implements Initializable {
 
 
 
+
+
     ObservableList<String> county = FXCollections.observableArrayList("Any", "Waterford", "Wexford", "Limerick", "Cork", "Tipperary", "Galway");
     ObservableList<String> minPrice = FXCollections.observableArrayList("No Min", "10000", "15000", "20000", "25000", "30000", "35000", "40000", "45000", "55000");
     ObservableList<String> maxPrice = FXCollections.observableArrayList("No Max", "10000", "15000", "20000", "25000", "30000", "35000", "40000", "45000", "55000");
@@ -170,7 +172,7 @@ public class MainController implements Initializable {
                            Main.set_pane(0);
                        }
                        else{
-                       txtfeedback.setText("Hello Kurwa \n");
+                       txtfeedback.setText("Testing  \n");
                        }
 
         }
@@ -235,7 +237,19 @@ public class MainController implements Initializable {
     }*/
 
     public void handleSearchButton(ActionEvent e) throws Exception {
-
+        String category = comboPropertyType.getValue();
+        String location = comboCounty.getValue();
+        String minPrice = comboMinPrice.getValue();
+        String maxPrice = comboMaxPrice.getValue();
+        ArrayList<Property>propertyAdding = new ArrayList<>();
+        propertyAdding = property.SearchMethod(category, location, minPrice, maxPrice);
+        ObservableList<Property> Newdata = FXCollections.observableArrayList(propertyAdding);
+        idColumn.setCellValueFactory(new PropertyValueFactory<Property, Integer>("propertyId"));
+        costColumn.setCellValueFactory(new PropertyValueFactory<Property, Double>("price"));
+        countyColum.setCellValueFactory(new PropertyValueFactory<Property, String>("locationGeneral"));
+        addressColum.setCellValueFactory(new PropertyValueFactory<Property, String>("address"));
+        eircodeColum.setCellValueFactory(new PropertyValueFactory<Property, String>("eircode"));
+        tableView.setItems(Newdata);
     }
 
 
