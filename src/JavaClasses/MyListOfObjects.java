@@ -15,8 +15,8 @@ public class MyListOfObjects{
         int index = 0;
         while (temp != null){   //loop until end of list
             s += "\n"+index+": "+temp.data;
-            temp = temp.next;  // go to next item in list
-            index++;  // increment the index
+            temp = temp.next;  //go to next item in list
+            index++;  //increment the index
         }
         return s;
     }
@@ -24,7 +24,7 @@ public class MyListOfObjects{
     public boolean add(Object newEntry){ // add at beginning of list
         Node temp = new Node(newEntry, first);
         first = temp;
-        length++;  // increment the length of the List
+        length++;  //increment the length of the List
         return true;
     }
 
@@ -134,7 +134,7 @@ public class MyListOfObjects{
             next = n;
         }
 
-    } // end of inner Node class
+    } //end of inner Node class
     /*******************************************************************************/
 
 

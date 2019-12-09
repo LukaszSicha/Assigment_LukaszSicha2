@@ -63,9 +63,17 @@ public class MainController implements Initializable {
     private TextArea txtfeedback;
     @FXML
     private TextArea txtfeedback1;
+    @FXML
+    private TextArea feedbackTableView;
+    @FXML
+    private TableView tableView;
+
     @FXML private TableColumn<Property, Integer> idColumn;  // notice the use of the wrapper class
     @FXML private TableColumn<Property, String> nameColumn;
     @FXML private TableColumn<Property, String> descriptionColumn;
+    @FXML private TableColumn<Property, String> countyColum;
+    @FXML private TableColumn<Property, String> addressColum;
+    @FXML private TableColumn<Property, String> eircodeColum;
     @FXML private TableColumn<Property, Double> costColumn;
 
 
@@ -77,19 +85,45 @@ public class MainController implements Initializable {
 
 
     public void initialize(URL location, ResourceBundle resources) {
+
+        try {
+            MyListOfObjects propertiesOne;
+            ArrayList<Property> tableProperty = new ArrayList<>();
+            XStream xstream = new XStream(new DomDriver());
+            ObjectInputStream is = xstream.createObjectInputStream
+                    (new FileReader("propertyFile.xml"));
+            propertiesOne = (MyListOfObjects) is.readObject();
+            is.close();
+            for (int i = 0; i < propertiesOne.size(); i++) {
+                Property forProperty = (Property) propertiesOne.get(i);
+                tableProperty.add(forProperty);
+            }
+
+            ObservableList<Property> data = FXCollections.observableArrayList(tableProperty);
+
+            idColumn.setCellValueFactory(new PropertyValueFactory<Property, Integer>("propertyId"));
+            costColumn.setCellValueFactory(new PropertyValueFactory<Property, Double>("price"));
+            countyColum.setCellValueFactory(new PropertyValueFactory<Property, String>("locationGeneral"));
+            addressColum.setCellValueFactory(new PropertyValueFactory<Property, String>("address"));
+            eircodeColum.setCellValueFactory(new PropertyValueFactory<Property, String>("eircode"));
+
+            tableView.setItems(data);
+        }
+
+        catch (Exception e){
+        }
+
         property = new PropertyStore();
-
-
-        idColumn.setCellValueFactory(new PropertyValueFactory<Property, Integer>("id"));
-        nameColumn.setCellValueFactory(new PropertyValueFactory<Property, String>("name"));
-        descriptionColumn.setCellValueFactory(new PropertyValueFactory<Property, String>("description"));
-        costColumn.setCellValueFactory(new PropertyValueFactory<Property, Double>("cost"));
-
+        comboCounty.setItems(county);
+        comboPropertyType.setItems(propertyType);
+        comboMinPrice.setItems(minPrice);
+        comboMaxPrice.setItems(maxPrice);
         comboCounty.setValue("Any");
+        comboPropertyType.setValue("Any");
         comboMinPrice.setValue("No Min");
         comboMaxPrice.setValue("No Max");
-        comboPropertyType.setValue("Any");
     }
+
 
 
     public void handleButtonLoginAgent(ActionEvent e) throws Exception {
@@ -105,47 +139,49 @@ public class MainController implements Initializable {
     }
 
     public void handleButtonCreateProperty(ActionEvent e) throws Exception {
+        try{
+            int propertiesId;
+            try {
+                propertiesId = Integer.parseInt(txtpropertyId.getText());
+            } catch (Exception t) {
+                txtfeedback.setText("Enter number");
+                propertiesId = Integer.parseInt(null);
+            }
+                String description = txtdescription.getText();
+                String address = txtaddress.getText();
+                String propertyType = comboPropertyType.getValue();
+                String comboCountyValue = comboCounty.getValue();
+                String locationSpecificValue = txtlocationSpecific.getText();
+                String BER = txtBER.getText();
+                String Eircode = txtEircode.getText();
+                double price = Double.parseDouble(txtprice.getText());
 
-        property.loadProperty();
-        int propertyId = Integer.parseInt(txtpropertyId.getText());
-        String description = txtdescription.getText();
-        String address = txtaddress.getText();
-        String StrPropertyType = comboCounty.getValue();
-        String StrCounty = comboPropertyType.getValue();
-        String locationSpecific = txtlocationSpecific.getText();
-        String BER = txtBER.getText();
-        String Eircode = txtEircode.getText();
-        double price = Double.parseDouble(txtprice.getText());
+                       if( property.addProperty(propertiesId, description, address, propertyType, comboCountyValue, locationSpecificValue, BER, Eircode, price)) {
+                           txtpropertyId.setText("");
+                           txtdescription.setText("");
+                           txtaddress.setText("");
+                           comboPropertyType.setValue("Any");
+                           comboCounty.setValue("Any");
+                           txtlocationSpecific.setText("");
+                           txtBER.setText("");
+                           txtEircode.setText("");
+                           txtprice.setText("");
+                           txtfeedback.setText("Property Added");
+                           Main.set_pane(0);
+                       }
+                       else{
+                       txtfeedback.setText("Hello Kurwa \n");
+                       }
 
-        XStream xstream = new XStream(new DomDriver());
-        try {
-            ObjectInputStream is = xstream.createObjectInputStream(new FileReader("propertyFile.xml"));
-            property.propertiesArray = (ArrayList<Property>) is.readObject();
-            is.close();
-        } catch (FileNotFoundException t) {
-            property.propertiesArray = new ArrayList<Property>();
-            txtfeedback.setText("");
-        } catch (Exception t) {
-            txtfeedback.setText("");
         }
-
-
-        try {
-            Property propertyLocal = new Property(propertyId, description, address, StrPropertyType, StrCounty, locationSpecific, BER, Eircode, price);
-            property.propertiesArray.add(propertyLocal);
-            ObjectOutputStream out = xstream.createObjectOutputStream(new FileWriter("propertyFile.xml"));
-            out.writeObject(property.propertiesArray);
-            out.close();
-        } catch (Exception f) {
-            txtfeedback.setText("");
+        catch(Exception d){
+            txtfeedback.setText("Please Make sure you\nentered Everything correctly\n" + d);
         }
-        Main.set_pane(7);
+     }
 
-    }
 
-    public void handleSaveBtn(ActionEvent e) throws Exception{
-        property.saveProperty();
-    }
+
+
 
     public void handleLoadBtn(ActionEvent e) throws Exception{
         property.loadProperty();

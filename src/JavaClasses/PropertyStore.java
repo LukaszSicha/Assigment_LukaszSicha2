@@ -5,9 +5,8 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
-import java.util.Scanner;
+
 import javafx.fxml.FXML;
-import javafx.fxml.Initializable;
 
 import com.thoughtworks.xstream.XStream;
 import com.thoughtworks.xstream.io.xml.DomDriver;
@@ -20,13 +19,15 @@ public class PropertyStore {
     ArrayList<Admin> admins;
     ArrayList<Agent> agents;
 
+    private MyListOfObjects propertyLinkedList = new MyListOfObjects();
+
 
     @FXML
     public void saveProperty() throws Exception {
         XStream xstream = new XStream(new DomDriver());
         ObjectOutputStream out = xstream.createObjectOutputStream
                 (new FileWriter("propertyFile.xml"));
-        out.writeObject(propertiesArray);
+        out.writeObject(propertyLinkedList);
         out.close();
     }
 
@@ -35,15 +36,34 @@ public class PropertyStore {
         XStream xstream = new XStream(new DomDriver());
         ObjectInputStream is = xstream.createObjectInputStream
                 (new FileReader("propertyFile.xml"));
-        propertiesArray = (ArrayList<Property>) is.readObject();
+        propertyLinkedList = (MyListOfObjects) is.readObject();
         is.close();
     }
 
 
     @FXML
-    public void addProperty(int propertyId, String description, String address, String category, String locationGeneral, String locationSpecific, String BER, String Eircode, double price) {
-        Property property = new Property(propertyId, description, address, category, locationGeneral, locationSpecific, BER, Eircode, price);
-        propertiesArray.add(property);
+    public boolean addProperty(int propertyId, String description, String address, String category, String locationGeneral, String locationSpecific, String BER, String Eircode, double price) {
+        if(propertyLinkedList.isEmpty()) {
+            try {
+                loadProperty();
+                Property propertyVar = new Property(propertyId, description, address, category, locationGeneral, locationSpecific, BER, Eircode, price);
+                propertyLinkedList.add(propertyVar);
+                saveProperty();
+                return true;
+            } catch (Exception e) {
+                return false;
+            }
+        }
+        else {
+            try {
+                Property propertyVar = new Property(propertyId, description, address, category, locationGeneral, locationSpecific, BER, Eircode, price);
+                propertyLinkedList.add(propertyVar);
+                saveProperty();
+                return true;
+            } catch (Exception t) {
+                return false;
+            }
+        }
     }
 
     @FXML
@@ -101,14 +121,7 @@ public class PropertyStore {
         }
     }
 
-    @FXML
-    public void saveAgent() throws Exception {
-        XStream xstream = new XStream(new DomDriver());
-        ObjectOutputStream out = xstream.createObjectOutputStream
-                (new FileWriter("propertyFile.xml"));
-        out.writeObject(agents);
-        out.close();
-    }
+
 
 
 }

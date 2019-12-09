@@ -1,0 +1,75 @@
+<object-stream>
+  <JavaClasses.MyListOfObjects>
+    <first>
+      <data class="JavaClasses.Property">
+        <propertyId>3</propertyId>
+        <description>asdgsadg</description>
+        <address>asdgs</address>
+        <category>Single House</category>
+        <locationGeneral>Wexford</locationGeneral>
+        <locationSpecific>asdgsad</locationSpecific>
+        <BER>asdg</BER>
+        <Eircode>asdgsadg</Eircode>
+        <price>250000.0</price>
+      </data>
+      <next>
+        <data class="JavaClasses.Property">
+          <propertyId>7</propertyId>
+          <description>sdfhdfhds</description>
+          <address>sdfhdsfh</address>
+          <category>Apartment</category>
+          <locationGeneral>Limerick</locationGeneral>
+          <locationSpecific>sdfhsdfh</locationSpecific>
+          <BER>sdfhsdfh</BER>
+          <Eircode>sdfhsdfh</Eircode>
+          <price>150000.0</price>
+        </data>
+        <next>
+          <data class="JavaClasses.Property">
+            <propertyId>5</propertyId>
+            <description>dsfhdsfhdsfh</description>
+            <address>sdfhsdfh</address>
+            <category>Apartment</category>
+            <locationGeneral>Limerick</locationGeneral>
+            <locationSpecific>sdfhsdfh</locationSpecific>
+            <BER>sdfhsdfh</BER>
+            <Eircode>sdfhsdfhd</Eircode>
+            <price>150000.0</price>
+          </data>
+          <next>
+            <data class="JavaClasses.Property">
+              <propertyId>3</propertyId>
+              <description>gfsdagsdag</description>
+              <address>sasdgsadgs</address>
+              <category>Apartment</category>
+              <locationGeneral>Limerick</locationGeneral>
+              <locationSpecific>asdgsadg</locationSpecific>
+              <BER>asdgsadg</BER>
+              <Eircode>asdgsad</Eircode>
+              <price>150000.0</price>
+            </data>
+            <next>
+              <data class="JavaClasses.Property">
+                <propertyId>2</propertyId>
+                <description>dfghsdagsad</description>
+                <address>asdgsadgsad</address>
+                <category>Apartment</category>
+                <locationGeneral>Wexford</locationGeneral>
+                <locationSpecific>asdgsadgs</locationSpecific>
+                <BER>asdgasdg</BER>
+                <Eircode>asdgsadg</Eircode>
+                <price>150000.0</price>
+              </data>
+              <outer-class reference="../../../../../.."/>
+            </next>
+            <outer-class reference="../../../../.."/>
+          </next>
+          <outer-class reference="../../../.."/>
+        </next>
+        <outer-class reference="../../.."/>
+      </next>
+      <outer-class reference="../.."/>
+    </first>
+    <length>5</length>
+  </JavaClasses.MyListOfObjects>
+</object-stream>
