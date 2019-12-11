@@ -66,73 +66,136 @@ public class PropertyStore {
         }
     }
 
-   /* @FXML
-    public String listProperties() {
-        int i = 0;
-        String displayProperty = "All properties";
-        for (Property item : propertiesArray) {
-            displayProperty += "\n" + (i++) + " : " + item;
-        }
-        return displayProperty;
-    }
-
-
-    public Property getProdDetails(String id) {
-
-        try {
-            int id1 = (Integer.parseInt(id));  //Test only
-            for (Property item : propertiesArray) {
-                if (item.getPropertyId() == id1) {
-                    return item;
-                }
-            }
-        } catch (Exception e) {
-        }
-        return null;
-    }*/
-
 
     public ArrayList<Property> SearchMethod(String propertyType, String location, String minPrice, String maxPrice) {
 
-        MyListOfObjects proportyLoading = new MyListOfObjects();
-        ArrayList<Property> tableProperty = new ArrayList<>();
+        MyListOfObjects propertiesSize = new MyListOfObjects();
+        ArrayList<Property> searchTBL = new ArrayList<>();
         try {
             XStream xstream = new XStream(new DomDriver());
             ObjectInputStream is = xstream.createObjectInputStream
-                    (new FileReader("/FXML/propertyList.xml"));
-            proportyLoading = (MyListOfObjects) is.readObject();
+                    (new FileReader("propertyFile.xml"));
+            propertiesSize = (MyListOfObjects) is.readObject();
             is.close();
         }
         catch (Exception e){
 
         }
 
-        for (int i = 0; i < proportyLoading.size(); i++) {
-            Property propertyAdd = (Property) proportyLoading.get(i);
-            tableProperty.add(propertyAdd);
+        for (int i = 0; i < propertiesSize.size(); i++) {
+            Property forProperty = (Property) propertiesSize.get(i);
+            searchTBL.add(forProperty);
         }
 
         if (propertyType == "Any" && location =="Any" && minPrice == "No Min" && maxPrice == "No Max"){
-            return tableProperty;
+            return searchTBL;
         }
         else {
             ArrayList<Property> searchResults = new ArrayList<>();
 
-            for (int i = 0; i < tableProperty.size(); i++) {
+            for (int i = 0; i < searchTBL.size(); i++) {
 
-                if (propertyType.equals("Any") && tableProperty.get(i).getLocationGeneral().equals(location) && minPrice.equals("No Min") && maxPrice.equals("No Max")) {
-                    searchResults.add(tableProperty.get(i));
-                } else if (location.equals("Any") && tableProperty.get(i).getCategory().equals(propertyType) && minPrice.equals("No Min") && maxPrice.equals("No Max")) {
-                    searchResults.add(tableProperty.get(i));
-                } else if (tableProperty.get(i).getCategory().equals(propertyType) && tableProperty.get(i).getLocationGeneral().equals(location) && minPrice.equals("No Min") && maxPrice.equals("No Max")) {
-                    searchResults.add(tableProperty.get(i));
-                } else if (tableProperty.get(i).getCategory().equals(propertyType) && tableProperty.get(i).getLocationGeneral().equals(location) && minPrice != "No Min" && maxPrice.equals("No Max")) {
-                    int price = Integer.parseInt(Double.toString(tableProperty.get(i).getPrice()));
-                    if (price > Integer.parseInt(minPrice)) {
-                        searchResults.add(tableProperty.get(i));
+                if (propertyType.equals("Any") && searchTBL.get(i).getLocationGeneral().equals(location) && minPrice.equals("No Min") && maxPrice.equals("No Max")) {
+                    searchResults.add(searchTBL.get(i));
+                } else if (location.equals("Any") && searchTBL.get(i).getCategory().equals(propertyType) && minPrice.equals("No Min") && maxPrice.equals("No Max")) {
+                    searchResults.add(searchTBL.get(i));
+                } else if (searchTBL.get(i).getCategory().equals(propertyType) && searchTBL.get(i).getLocationGeneral().equals(location) && minPrice.equals("No Min") && maxPrice.equals("No Max")) {
+                    searchResults.add(searchTBL.get(i));
+                } else if (searchTBL.get(i).getCategory().equals(propertyType) && searchTBL.get(i).getLocationGeneral().equals(location) && minPrice != "No Min" && maxPrice.equals("No Max")) {
+                    double price = searchTBL.get(i).getPrice();
+                    double checker = Double.parseDouble(minPrice);
+                    if (price > checker) {
+                        searchResults.add(searchTBL.get(i));
                     }
                 }
-
+                else if(searchTBL.get(i).getCategory().equals(propertyType) && searchTBL.get(i).getLocationGeneral().equals(location) && minPrice == "No Min" && maxPrice != "No Max") {
+                    double price = searchTBL.get(i).getPrice();
+                    double checker = Double.parseDouble(maxPrice);
+                    if (price < checker) {
+                        searchResults.add(searchTBL.get(i));
+                    }
+                }
+                else if (propertyType.equals("Any") && location.equals("Any") && minPrice != "No Min" && maxPrice.equals("No Max")) {
+                    double price = searchTBL.get(i).getPrice();
+                    double checker = Double.parseDouble(minPrice);
+                    if (price > checker) {
+                        searchResults.add(searchTBL.get(i));
+                    }
+                }
+                else if(propertyType.equals("Any") && location.equals("Any") && minPrice == "No Min" && maxPrice != "No Max") {
+                    double price = searchTBL.get(i).getPrice();
+                    double checker = Double.parseDouble(maxPrice);
+                    if (price < checker) {
+                        searchResults.add(searchTBL.get(i));
+                    }
+                }
+                else if(propertyType.equals("Any") && searchTBL.get(i).getLocationGeneral().equals(location) && minPrice != "No Min" && maxPrice == "No Max") {
+                    double price = searchTBL.get(i).getPrice();
+                    double checker = Double.parseDouble(minPrice);
+                    if (price > checker) {
+                        searchResults.add(searchTBL.get(i));
+                    }
+                }
+                else if(propertyType.equals("Any") && searchTBL.get(i).getLocationGeneral().equals(location) && minPrice == "No Min" && maxPrice != "No Max") {
+                    double price = searchTBL.get(i).getPrice();
+                    double checker = Double.parseDouble(maxPrice);
+                    if (price < checker) {
+                        searchResults.add(searchTBL.get(i));
+                    }
+                }
+                else if(propertyType.equals("Any") && searchTBL.get(i).getLocationGeneral().equals(location) && minPrice != "No Min" && maxPrice != "No Max") {
+                    double price = searchTBL.get(i).getPrice();
+                    double Minchecker = Double.parseDouble(minPrice);
+                    double Maxchecker = Double.parseDouble(maxPrice);
+                    if (price > Minchecker && price < Maxchecker) {
+                        searchResults.add(searchTBL.get(i));
+                    }
+                }
+                else if(searchTBL.get(i).getCategory().equals(propertyType) && searchTBL.get(i).getLocationGeneral().equals(location) && minPrice != "No Min" && maxPrice != "No Max") {
+                    double price = searchTBL.get(i).getPrice();
+                    double Minchecker = Double.parseDouble(minPrice);
+                    double Maxchecker = Double.parseDouble(maxPrice);
+                    if (price > Minchecker && price < Maxchecker) {
+                        searchResults.add(searchTBL.get(i));
+                    }
+                }
+                else if(propertyType.equals("Any") && location.equals("Any") && minPrice != "No Min" && maxPrice != "No Max") {
+                    double price = searchTBL.get(i).getPrice();
+                    double Minchecker = Double.parseDouble(minPrice);
+                    double Maxchecker = Double.parseDouble(maxPrice);
+                    if (price > Minchecker && price < Maxchecker) {
+                        searchResults.add(searchTBL.get(i));
+                    }
+                }
+                else if(searchTBL.get(i).getCategory().equals(propertyType) && location.equals("Any") && minPrice != "No Min" && maxPrice != "No Max") {
+                    double price = searchTBL.get(i).getPrice();
+                    double Minchecker = Double.parseDouble(minPrice);
+                    double Maxchecker = Double.parseDouble(maxPrice);
+                    if (price > Minchecker && price < Maxchecker) {
+                        searchResults.add(searchTBL.get(i));
+                    }
+                }
+                else if(searchTBL.get(i).getCategory().equals(propertyType) && location.equals("Any") && minPrice != "No Min" && maxPrice == "No Max") {
+                    double price = searchTBL.get(i).getPrice();
+                    double Minchecker = Double.parseDouble(minPrice);
+                    if (price > Minchecker) {
+                        searchResults.add(searchTBL.get(i));
+                    }
+                }
+                else if(searchTBL.get(i).getCategory().equals(propertyType) && location.equals("Any") && minPrice == "No Min" && maxPrice != "No Max") {
+                    double price = searchTBL.get(i).getPrice();
+                    double Maxchecker = Double.parseDouble(maxPrice);
+                    if (price < Maxchecker) {
+                        searchResults.add(searchTBL.get(i));
+                    }
+                }
+                else if(searchTBL.get(i).getCategory().equals(propertyType) && searchTBL.get(i).getLocationGeneral().equals(location) && minPrice != "No Min" && maxPrice == "No Max") {
+                    double price = searchTBL.get(i).getPrice();
+                    double Minchecker = Double.parseDouble(minPrice);
+                    if (price > Minchecker) {
+                        searchResults.add(searchTBL.get(i));
+                    }
+                }
             }
             return searchResults;
         }

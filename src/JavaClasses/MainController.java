@@ -230,19 +230,6 @@ public class MainController implements Initializable {
         Main.set_pane(7);
     }
 
-    /*public void handleButtonDeleteProperty(ActionEvent e) throws Exception{
-
-        try {
-
-            ObjectOutputStream out = xstream.createObjectOutputStream(new FileWriter("propertyFile.xml"));
-            out.writeObject(property.propertiesArray);
-            out.close();
-        } catch (Exception f) {
-            txtfeedback.setText("");
-        }
-        Main.set_pane(7);
-    }*/
-
     public void handleSearchButton(ActionEvent e) throws Exception {
 
         String propertyType = comboPropertyType.getValue();
@@ -274,5 +261,9 @@ public class MainController implements Initializable {
     }
 
 
+    public void handleDeleteButton(ActionEvent e){
+        Property selectItem = (Property) tableView.getSelectionModel().getSelectedItem();
+        tableView.getItems().remove(selectItem);
 
+    }
 }
