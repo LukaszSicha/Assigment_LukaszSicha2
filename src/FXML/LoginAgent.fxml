@@ -17,10 +17,10 @@
                 <Font size="22.0" />
             </font>
         </Text>
-        <Button layoutX="14.0" layoutY="432.0" mnemonicParsing="false" onAction="#handleLoginBtn" style="-fx-background-color: #e6e2da; -fx-border-color: black;" text="Login" />
         <TextField fx:id="username" layoutX="104.0" layoutY="250.0" />
         <Text layoutX="24.0" layoutY="267.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username" />
         <Text layoutX="24.0" layoutY="304.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password" />
+        <Button layoutX="14.0" layoutY="432.0" mnemonicParsing="false" onAction="#handleLoginBtn" style="-fx-background-color: #e6e2da; -fx-border-color: black;" text="Login" />
         <ImageView fitHeight="200.0" fitWidth="200.0" layoutX="297.0" layoutY="7.0">
             <image>
                 <Image url="@../../../FilesFor%20Assigment/house1.png" />

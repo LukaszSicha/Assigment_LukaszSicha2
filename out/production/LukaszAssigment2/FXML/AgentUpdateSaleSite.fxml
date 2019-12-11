@@ -114,7 +114,6 @@
         </VBox>
         <Button layoutX="81.0" layoutY="429.0" mnemonicParsing="false" onAction="#handleButtonBackToAgentSite" style="-fx-background-color: #e6e2da; -fx-border-color: black;" text="Back" />
         <TextArea fx:id="txtfeedback" editable="false" layoutX="317.0" layoutY="307.0" prefHeight="149.0" prefWidth="200.0" />
-        <Button layoutX="130.0" layoutY="429.0" mnemonicParsing="false" onAction="#handleReadBtn" style="-fx-background-color: #e6e2da; -fx-border-color: black;" text="Read" />
       <Button layoutX="462.0" layoutY="25.0" mnemonicParsing="false" onAction="#handleButtonBack" style="-fx-background-color: #e6e2da; -fx-border-color: black;" text="Log Out" />
     </children>
 </AnchorPane>

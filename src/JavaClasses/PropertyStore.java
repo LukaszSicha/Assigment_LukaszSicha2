@@ -1,23 +1,23 @@
 package JavaClasses;
 
+import java.io.*;
 import java.util.ArrayList;
-import java.io.FileReader;
-import java.io.FileWriter;
-import java.io.ObjectInputStream;
-import java.io.ObjectOutputStream;
 
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 
 import com.thoughtworks.xstream.XStream;
 import com.thoughtworks.xstream.io.xml.DomDriver;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.stage.Stage;
 
 
 public class PropertyStore {
 
     @FXML
-    ArrayList<Property> propertiesArray = new ArrayList<Property>();
-    ArrayList<Admin> admins;
-    ArrayList<Agent> agents;
 
     private MyListOfObjects propertyLinkedList = new MyListOfObjects();
 
@@ -66,7 +66,7 @@ public class PropertyStore {
         }
     }
 
-    @FXML
+   /* @FXML
     public String listProperties() {
         int i = 0;
         String displayProperty = "All properties";
@@ -89,37 +89,8 @@ public class PropertyStore {
         } catch (Exception e) {
         }
         return null;
-    }
+    }*/
 
-
-    public String listCategoryProporties(String prop, String subProp)
-    {
-        String displayProporties;
-        displayProporties=""+prop+"----"+subProp;
-        for (Property item:propertiesArray){
-            if (item.getCategory().equals(prop) && item.getCategory().equals(subProp)){
-                displayProporties+= "\n"+ item.getPropertyId() + ": " + item.getAddress();
-            }
-            else if (prop.equals("All")){
-                displayProporties+= "\n"+ item.getPropertyId() + ": " + item.getAddress();
-            }
-        }
-        return displayProporties;
-
-    }
-
-
-    public void deleteAgents(String username){
-        try{
-            for(Agent item:agents){
-                if(item.getUsername().equals(username)){
-                    agents.remove(item);
-                }
-            }
-        } catch (Exception e){
-
-        }
-    }
 
     public ArrayList<Property> SearchMethod(String propertyType, String location, String minPrice, String maxPrice) {
 
@@ -128,7 +99,7 @@ public class PropertyStore {
         try {
             XStream xstream = new XStream(new DomDriver());
             ObjectInputStream is = xstream.createObjectInputStream
-                    (new FileReader("propertyList.xml"));
+                    (new FileReader("/FXML/propertyList.xml"));
             proportyLoading = (MyListOfObjects) is.readObject();
             is.close();
         }
@@ -166,10 +137,6 @@ public class PropertyStore {
             return searchResults;
         }
     }
-
-
-
-
 }
 
 

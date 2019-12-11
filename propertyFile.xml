@@ -2,18 +2,74 @@
   <JavaClasses.MyListOfObjects>
     <first>
       <data class="JavaClasses.Property">
-        <propertyId>1</propertyId>
-        <description>5 Rooms, 2 Bedrooms, 1 Bathroom</description>
-        <address>4 Stonyll, Clarintree</address>
+        <propertyId>4</propertyId>
+        <description>Noel House</description>
+        <address>71 CorkRoad</address>
         <category>Single House</category>
-        <locationGeneral>Wexford</locationGeneral>
-        <locationSpecific>Tramore</locationSpecific>
+        <locationGeneral>Waterford</locationGeneral>
+        <locationSpecific>Waterford</locationSpecific>
         <BER>W13</BER>
-        <Eircode>X91H631</Eircode>
-        <price>250000.0</price>
+        <Eircode>X81H821</Eircode>
+        <price>100000.0</price>
       </data>
+      <next>
+        <data class="JavaClasses.Property">
+          <propertyId>3</propertyId>
+          <description>Mohammed House</description>
+          <address>81 Viewstreet</address>
+          <category>Single House</category>
+          <locationGeneral>Limerick</locationGeneral>
+          <locationSpecific>Montery</locationSpecific>
+          <BER>W13</BER>
+          <Eircode>X61H921</Eircode>
+          <price>150000.0</price>
+        </data>
+        <next>
+          <data class="JavaClasses.Property">
+            <propertyId>2</propertyId>
+            <description>Davin House</description>
+            <address>CodeStreet 1337</address>
+            <category>Single House</category>
+            <locationGeneral>Waterford</locationGeneral>
+            <locationSpecific>Tramore</locationSpecific>
+            <BER>W13</BER>
+            <Eircode>X78H821</Eircode>
+            <price>350000.0</price>
+          </data>
+          <next>
+            <data class="JavaClasses.Property">
+              <propertyId>0</propertyId>
+              <description>Jamie House</description>
+              <address>Clarinwood 81</address>
+              <category>Apartment</category>
+              <locationGeneral>Waterford</locationGeneral>
+              <locationSpecific>Tramore</locationSpecific>
+              <BER>W13</BER>
+              <Eircode>X91H652</Eircode>
+              <price>300000.0</price>
+            </data>
+            <next>
+              <data class="JavaClasses.Property">
+                <propertyId>1</propertyId>
+                <description>5 Rooms, 2 Bedrooms, 1 Bathroom</description>
+                <address>4 Stonyll, Clarintree</address>
+                <category>Single House</category>
+                <locationGeneral>Wexford</locationGeneral>
+                <locationSpecific>Tramore</locationSpecific>
+                <BER>W13</BER>
+                <Eircode>X91H631</Eircode>
+                <price>250000.0</price>
+              </data>
+              <outer-class reference="../../../../../.."/>
+            </next>
+            <outer-class reference="../../../../.."/>
+          </next>
+          <outer-class reference="../../../.."/>
+        </next>
+        <outer-class reference="../../.."/>
+      </next>
       <outer-class reference="../.."/>
     </first>
-    <length>8</length>
+    <length>5</length>
   </JavaClasses.MyListOfObjects>
 </object-stream>

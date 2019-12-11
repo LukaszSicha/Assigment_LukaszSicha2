@@ -17,7 +17,6 @@
         <Button layoutX="445.0" layoutY="261.0" mnemonicParsing="false" onAction="#handleButtonCreatePropertySite" style="-fx-background-color: #e6e2da; -fx-border-color: black;" text="Create" />
         <Button layoutX="443.0" layoutY="223.0" mnemonicParsing="false" onAction="#handleButtonViewPropertiesAgent" style="-fx-background-color: #e6e2da; -fx-border-color: black;" text="Update" />
       <TextArea editable="false" layoutX="24.0" layoutY="408.0" prefHeight="53.0" prefWidth="233.0" />
-      <Button layoutX="421.0" layoutY="297.0" mnemonicParsing="false" onAction="#handleLoadBtn" style="-fx-background-color: #e6e2da; -fx-border-color: black;" text="View Properties" />
       <Button layoutX="417.0" layoutY="334.0" mnemonicParsing="false" style="-fx-background-color: #e6e2da; -fx-border-color: black;" text="Delete Properties" />
       <TextArea fx:id="txtfeedback" layoutX="24.0" layoutY="135.0" prefHeight="226.0" prefWidth="200.0" />
       <Text layoutX="24.0" layoutY="127.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Properties">

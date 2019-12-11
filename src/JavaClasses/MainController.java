@@ -10,8 +10,10 @@ import com.thoughtworks.xstream.io.xml.DomDriver;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
-import javafx.fxml.FXML;
-import javafx.fxml.Initializable;
+import javafx.fxml.*;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
@@ -24,6 +26,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.stage.Stage;
 
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -67,6 +70,10 @@ public class MainController implements Initializable {
     private TextArea feedbackTableView;
     @FXML
     private TableView tableView;
+    @FXML
+    private TextField txtCategory;
+    @FXML
+    private TextField txtCounty;
 
     @FXML private TableColumn<Property, Integer> idColumn;  // notice the use of the wrapper class
     @FXML private TableColumn<Property, String> nameColumn;
@@ -185,11 +192,11 @@ public class MainController implements Initializable {
 
 
 
-    public void handleLoadBtn(ActionEvent e) throws Exception{
+    /*public void handleLoadBtn(ActionEvent e) throws Exception{
         property.loadProperty();
         txtfeedback.setText(property.listProperties());
 
-    }
+    }*/
 
     public void handleButtonCreatePropertySite(ActionEvent e) throws Exception{
         Main.set_pane(8);
@@ -199,7 +206,7 @@ public class MainController implements Initializable {
         Main.set_pane(9);
     }
 
-    public void handleReadBtn(ActionEvent e) throws Exception{
+   /* public void handleReadBtn(ActionEvent e) throws Exception{
         property.loadProperty();
         txtfeedback.setText("Reading properties");
         String id = txtpropertyId.getText();
@@ -214,7 +221,7 @@ public class MainController implements Initializable {
             txtEircode.setText(""+properties.getEircode());
             txtprice.setText(""+properties.getPrice());
         }
-    }
+    }*/
 
 
 
@@ -237,12 +244,15 @@ public class MainController implements Initializable {
     }*/
 
     public void handleSearchButton(ActionEvent e) throws Exception {
-        String category = comboPropertyType.getValue();
-        String location = comboCounty.getValue();
+
+        String propertyType = comboPropertyType.getValue();
+        String locationProperty = comboCounty.getValue();
         String minPrice = comboMinPrice.getValue();
         String maxPrice = comboMaxPrice.getValue();
+
         ArrayList<Property>propertyAdding = new ArrayList<>();
-        propertyAdding = property.SearchMethod(category, location, minPrice, maxPrice);
+        propertyAdding = property.SearchMethod(propertyType, locationProperty, minPrice, maxPrice);
+
         ObservableList<Property> Newdata = FXCollections.observableArrayList(propertyAdding);
         idColumn.setCellValueFactory(new PropertyValueFactory<Property, Integer>("propertyId"));
         costColumn.setCellValueFactory(new PropertyValueFactory<Property, Double>("price"));
@@ -250,6 +260,17 @@ public class MainController implements Initializable {
         addressColum.setCellValueFactory(new PropertyValueFactory<Property, String>("address"));
         eircodeColum.setCellValueFactory(new PropertyValueFactory<Property, String>("eircode"));
         tableView.setItems(Newdata);
+    }
+
+    public void changeSceneToDetailedViewBtn(ActionEvent e) throws IOException
+    {
+        FXMLLoader loader = new FXMLLoader();
+        loader.setLocation(getClass().getResource("/FXML/viewProportiesSite.fxml"));
+        Parent tableViewParent = loader.load();
+        Scene tableViewScene = new Scene(tableViewParent);
+        Stage window = (Stage)((Node)e.getSource()).getScene().getWindow();
+        window.setScene(tableViewScene);
+        window.show();
     }
 
 
