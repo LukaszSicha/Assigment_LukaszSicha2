@@ -2,64 +2,288 @@
   <JavaClasses.MyListOfObjects>
     <first>
       <data class="JavaClasses.Property">
-        <propertyId>4</propertyId>
-        <description>Noel House</description>
-        <address>71 CorkRoad</address>
-        <category>Single House</category>
-        <locationGeneral>Waterford</locationGeneral>
-        <locationSpecific>Waterford</locationSpecific>
-        <BER>W13</BER>
-        <Eircode>X81H821</Eircode>
-        <price>100000.0</price>
+        <propertyId>7135</propertyId>
+        <description>2 Bedrooms, 2 Kitchens, 1 Room</description>
+        <address>4741 Mahlon Street</address>
+        <category>Apartment</category>
+        <locationGeneral>Limerick</locationGeneral>
+        <locationSpecific>Newark</locationSpecific>
+        <BER>X71</BER>
+        <Eircode>H137X12</Eircode>
+        <price>85000.0</price>
       </data>
       <next>
         <data class="JavaClasses.Property">
-          <propertyId>3</propertyId>
-          <description>Mohammed House</description>
-          <address>81 Viewstreet</address>
-          <category>Single House</category>
-          <locationGeneral>Limerick</locationGeneral>
-          <locationSpecific>Montery</locationSpecific>
-          <BER>W13</BER>
-          <Eircode>X61H921</Eircode>
-          <price>150000.0</price>
+          <propertyId>7142</propertyId>
+          <description>2 Rooms, 1 Bedroom, 1 Kitchen</description>
+          <address>646 Moonlight Drive</address>
+          <category>Double House</category>
+          <locationGeneral>Wexford</locationGeneral>
+          <locationSpecific>Hamilton Square</locationSpecific>
+          <BER>X13</BER>
+          <Eircode>H29X821</Eircode>
+          <price>450000.0</price>
         </data>
         <next>
           <data class="JavaClasses.Property">
-            <propertyId>2</propertyId>
-            <description>Davin House</description>
-            <address>CodeStreet 1337</address>
+            <propertyId>8230</propertyId>
+            <description>5 Bedrooms, 10 Rooms, 3 Kitchens</description>
+            <address>629 Oak Avenue</address>
             <category>Single House</category>
-            <locationGeneral>Waterford</locationGeneral>
-            <locationSpecific>Tramore</locationSpecific>
-            <BER>W13</BER>
-            <Eircode>X78H821</Eircode>
-            <price>350000.0</price>
+            <locationGeneral>Tipperary</locationGeneral>
+            <locationSpecific>Northbrook</locationSpecific>
+            <BER>H71</BER>
+            <Eircode>X891H21</Eircode>
+            <price>1000000.0</price>
           </data>
           <next>
             <data class="JavaClasses.Property">
-              <propertyId>0</propertyId>
-              <description>Jamie House</description>
-              <address>Clarinwood 81</address>
+              <propertyId>8173</propertyId>
+              <description>2 Bedrooms, 2 Kitchens, 1 Room</description>
+              <address>4871 Garfield Road</address>
               <category>Apartment</category>
-              <locationGeneral>Waterford</locationGeneral>
-              <locationSpecific>Tramore</locationSpecific>
-              <BER>W13</BER>
-              <Eircode>X91H652</Eircode>
-              <price>300000.0</price>
+              <locationGeneral>Cork</locationGeneral>
+              <locationSpecific>Peoria</locationSpecific>
+              <BER>H17</BER>
+              <Eircode>H28X213</Eircode>
+              <price>150000.0</price>
             </data>
             <next>
               <data class="JavaClasses.Property">
-                <propertyId>1</propertyId>
-                <description>5 Rooms, 2 Bedrooms, 1 Bathroom</description>
-                <address>4 Stonyll, Clarintree</address>
-                <category>Single House</category>
-                <locationGeneral>Wexford</locationGeneral>
-                <locationSpecific>Tramore</locationSpecific>
-                <BER>W13</BER>
-                <Eircode>X91H631</Eircode>
+                <propertyId>7141</propertyId>
+                <description>3 Rooms, 3 Kitchen, 2 bedroom</description>
+                <address>4974 Kimberly Way</address>
+                <category>Double House</category>
+                <locationGeneral>Limerick</locationGeneral>
+                <locationSpecific>Lowell</locationSpecific>
+                <BER>H81</BER>
+                <Eircode>W81H73</Eircode>
                 <price>250000.0</price>
               </data>
+              <next>
+                <data class="JavaClasses.Property">
+                  <propertyId>7236</propertyId>
+                  <description>3 Rooms, 2 Bedrooms, 1 Kitchen</description>
+                  <address>689 Hidden Meadow Drive</address>
+                  <category>Single House</category>
+                  <locationGeneral>Galway</locationGeneral>
+                  <locationSpecific>Grenora</locationSpecific>
+                  <BER>H17</BER>
+                  <Eircode>X11H831</Eircode>
+                  <price>250000.0</price>
+                </data>
+                <next>
+                  <data class="JavaClasses.Property">
+                    <propertyId>8131</propertyId>
+                    <description>1 Rooms, 2 Beedroms, 2 Kitchens</description>
+                    <address>1212 Arbor Court</address>
+                    <category>Double House</category>
+                    <locationGeneral>Waterford</locationGeneral>
+                    <locationSpecific>Gillette</locationSpecific>
+                    <BER>H71</BER>
+                    <Eircode>X81H721</Eircode>
+                    <price>250000.0</price>
+                  </data>
+                  <next>
+                    <data class="JavaClasses.Property">
+                      <propertyId>8251</propertyId>
+                      <description>1 Bedrom, 3 Rooms, 1 Kitchen</description>
+                      <address>4267 Hillview Drive</address>
+                      <category>Apartment</category>
+                      <locationGeneral>Cork</locationGeneral>
+                      <locationSpecific>Dalton</locationSpecific>
+                      <BER>JK1</BER>
+                      <Eircode>X71H721</Eircode>
+                      <price>250100.0</price>
+                    </data>
+                    <next>
+                      <data class="JavaClasses.Property">
+                        <propertyId>7431</propertyId>
+                        <description>3 Rooms, 2 Bedrooms, 1 Kitchen</description>
+                        <address>793 Nancy Street</address>
+                        <category>Double House</category>
+                        <locationGeneral>Wexford</locationGeneral>
+                        <locationSpecific>Durham</locationSpecific>
+                        <BER>W81</BER>
+                        <Eircode>X81H821</Eircode>
+                        <price>81300.0</price>
+                      </data>
+                      <next>
+                        <data class="JavaClasses.Property">
+                          <propertyId>8341</propertyId>
+                          <description>3 Bedrooms, 1Kitchen, 3 Rooms</description>
+                          <address>3401 Providence Lane</address>
+                          <category>Apartment</category>
+                          <locationGeneral>Cork</locationGeneral>
+                          <locationSpecific>Covina</locationSpecific>
+                          <BER>W51</BER>
+                          <Eircode>X81H923</Eircode>
+                          <price>150000.0</price>
+                        </data>
+                        <next>
+                          <data class="JavaClasses.Property">
+                            <propertyId>7423</propertyId>
+                            <description>2 Bedrooms, 3Kitchens, 4 Rooms</description>
+                            <address>53 Ash Street</address>
+                            <category>Single House</category>
+                            <locationGeneral>Wexford</locationGeneral>
+                            <locationSpecific>Virginia</locationSpecific>
+                            <BER>W13</BER>
+                            <Eircode>X91H821</Eircode>
+                            <price>1350000.0</price>
+                          </data>
+                          <next>
+                            <data class="JavaClasses.Property">
+                              <propertyId>5241</propertyId>
+                              <description>Big house, two rooms</description>
+                              <address>3471 Douglas Dairy Road</address>
+                              <category>Single House</category>
+                              <locationGeneral>Limerick</locationGeneral>
+                              <locationSpecific>Big Prater</locationSpecific>
+                              <BER>W13</BER>
+                              <Eircode>X71H821</Eircode>
+                              <price>350000.0</price>
+                            </data>
+                            <next>
+                              <data class="JavaClasses.Property">
+                                <propertyId>5231</propertyId>
+                                <description>1 Bedrooms, 2 Rooms, 1 Kitchen</description>
+                                <address>81 Rooms Street</address>
+                                <category>Single House</category>
+                                <locationGeneral>Cork</locationGeneral>
+                                <locationSpecific>Idlewood</locationSpecific>
+                                <BER>W13</BER>
+                                <Eircode>X71H298</Eircode>
+                                <price>250000.0</price>
+                              </data>
+                              <next>
+                                <data class="JavaClasses.Property">
+                                  <propertyId>4321</propertyId>
+                                  <description>3 Bedrooms, 5 Rooms, 2 Kitchens</description>
+                                  <address>Ville 782, Newstreet</address>
+                                  <category>Detached</category>
+                                  <locationGeneral>Waterford</locationGeneral>
+                                  <locationSpecific>Dungarvan</locationSpecific>
+                                  <BER>W13</BER>
+                                  <Eircode>X81H821</Eircode>
+                                  <price>250000.0</price>
+                                </data>
+                                <next>
+                                  <data class="JavaClasses.Property">
+                                    <propertyId>5234</propertyId>
+                                    <description>3 Bedroom, 6 Rooms, 2 Kitchens</description>
+                                    <address>Ville 782, Newstreet</address>
+                                    <category>Double House</category>
+                                    <locationGeneral>Limerick</locationGeneral>
+                                    <locationSpecific>Dungarvan</locationSpecific>
+                                    <BER>W13</BER>
+                                    <Eircode>X61H921</Eircode>
+                                    <price>550000.0</price>
+                                  </data>
+                                  <next>
+                                    <data class="JavaClasses.Property">
+                                      <propertyId>4325</propertyId>
+                                      <description>2 Bedroom, 5 Rooms, 1 Kitchen</description>
+                                      <address>81 Ville, Newstreet</address>
+                                      <category>Double House</category>
+                                      <locationGeneral>Cork</locationGeneral>
+                                      <locationSpecific>Dungarvan</locationSpecific>
+                                      <BER>W13</BER>
+                                      <Eircode>X61H821</Eircode>
+                                      <price>500000.0</price>
+                                    </data>
+                                    <next>
+                                      <data class="JavaClasses.Property">
+                                        <propertyId>4124</propertyId>
+                                        <description>Noel House</description>
+                                        <address>71 CorkRoad</address>
+                                        <category>Single House</category>
+                                        <locationGeneral>Waterford</locationGeneral>
+                                        <locationSpecific>Dungarvan</locationSpecific>
+                                        <BER>W13</BER>
+                                        <Eircode>X81H821</Eircode>
+                                        <price>100000.0</price>
+                                      </data>
+                                      <next>
+                                        <data class="JavaClasses.Property">
+                                          <propertyId>3213</propertyId>
+                                          <description>Mohammed House</description>
+                                          <address>81 Viewstreet</address>
+                                          <category>Single House</category>
+                                          <locationGeneral>Limerick</locationGeneral>
+                                          <locationSpecific>Montery</locationSpecific>
+                                          <BER>W13</BER>
+                                          <Eircode>X61H921</Eircode>
+                                          <price>150000.0</price>
+                                        </data>
+                                        <next>
+                                          <data class="JavaClasses.Property">
+                                            <propertyId>4322</propertyId>
+                                            <description>Davin House</description>
+                                            <address>CodeStreet 1337</address>
+                                            <category>Single House</category>
+                                            <locationGeneral>Waterford</locationGeneral>
+                                            <locationSpecific>Tramore</locationSpecific>
+                                            <BER>W13</BER>
+                                            <Eircode>X78H821</Eircode>
+                                            <price>350000.0</price>
+                                          </data>
+                                          <next>
+                                            <data class="JavaClasses.Property">
+                                              <propertyId>2120</propertyId>
+                                              <description>Jamie House</description>
+                                              <address>Clarinwood 81</address>
+                                              <category>Apartment</category>
+                                              <locationGeneral>Waterford</locationGeneral>
+                                              <locationSpecific>Tramore</locationSpecific>
+                                              <BER>W13</BER>
+                                              <Eircode>X91H652</Eircode>
+                                              <price>300000.0</price>
+                                            </data>
+                                            <next>
+                                              <data class="JavaClasses.Property">
+                                                <propertyId>4331</propertyId>
+                                                <description>5 Rooms, 2 Bedrooms, 1 Bathroom</description>
+                                                <address>4 Stonyll, Clarintree</address>
+                                                <category>Single House</category>
+                                                <locationGeneral>Wexford</locationGeneral>
+                                                <locationSpecific>Tramore</locationSpecific>
+                                                <BER>W13</BER>
+                                                <Eircode>X91H631</Eircode>
+                                                <price>250000.0</price>
+                                              </data>
+                                              <outer-class reference="../../../../../../../../../../../../../../../../../../../../../.."/>
+                                            </next>
+                                            <outer-class reference="../../../../../../../../../../../../../../../../../../../../.."/>
+                                          </next>
+                                          <outer-class reference="../../../../../../../../../../../../../../../../../../../.."/>
+                                        </next>
+                                        <outer-class reference="../../../../../../../../../../../../../../../../../../.."/>
+                                      </next>
+                                      <outer-class reference="../../../../../../../../../../../../../../../../../.."/>
+                                    </next>
+                                    <outer-class reference="../../../../../../../../../../../../../../../../.."/>
+                                  </next>
+                                  <outer-class reference="../../../../../../../../../../../../../../../.."/>
+                                </next>
+                                <outer-class reference="../../../../../../../../../../../../../../.."/>
+                              </next>
+                              <outer-class reference="../../../../../../../../../../../../../.."/>
+                            </next>
+                            <outer-class reference="../../../../../../../../../../../../.."/>
+                          </next>
+                          <outer-class reference="../../../../../../../../../../../.."/>
+                        </next>
+                        <outer-class reference="../../../../../../../../../../.."/>
+                      </next>
+                      <outer-class reference="../../../../../../../../../.."/>
+                    </next>
+                    <outer-class reference="../../../../../../../../.."/>
+                  </next>
+                  <outer-class reference="../../../../../../../.."/>
+                </next>
+                <outer-class reference="../../../../../../.."/>
+              </next>
               <outer-class reference="../../../../../.."/>
             </next>
             <outer-class reference="../../../../.."/>
@@ -70,6 +294,6 @@
       </next>
       <outer-class reference="../.."/>
     </first>
-    <length>5</length>
+    <length>21</length>
   </JavaClasses.MyListOfObjects>
 </object-stream>

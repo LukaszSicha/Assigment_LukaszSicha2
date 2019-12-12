@@ -40,8 +40,6 @@ public class PropertyStore {
         is.close();
     }
 
-
-    @FXML
     public boolean addProperty(int propertyId, String description, String address, String category, String locationGeneral, String locationSpecific, String BER, String Eircode, double price) {
         if(propertyLinkedList.isEmpty()) {
             try {
@@ -68,7 +66,6 @@ public class PropertyStore {
 
 
     public ArrayList<Property> SearchMethod(String propertyType, String location, String minPrice, String maxPrice) {
-
         MyListOfObjects propertiesSize = new MyListOfObjects();
         ArrayList<Property> searchTBL = new ArrayList<>();
         try {

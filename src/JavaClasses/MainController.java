@@ -26,6 +26,8 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
 
 import java.net.URL;
@@ -34,12 +36,12 @@ import java.util.ResourceBundle;
 public class MainController implements Initializable {
 
     protected PropertyStore property;
-    /*protected PropertyAgentController agenty;*/
 
     String StrCounty, StrPropertyType;
     String DbMin, DbMax;
 
-
+    @FXML
+    private ImageView image;
     @FXML
     private ComboBox<String> comboCounty = new ComboBox<>();
     @FXML
@@ -74,18 +76,16 @@ public class MainController implements Initializable {
     private TextField txtCategory;
     @FXML
     private TextField txtCounty;
-
-    @FXML private TableColumn<Property, Integer> idColumn;  // notice the use of the wrapper class
-    @FXML private TableColumn<Property, String> nameColumn;
-    @FXML private TableColumn<Property, String> descriptionColumn;
-    @FXML private TableColumn<Property, String> countyColum;
-    @FXML private TableColumn<Property, String> addressColum;
-    @FXML private TableColumn<Property, String> eircodeColum;
-    @FXML private TableColumn<Property, Double> costColumn;
-
-
-
-
+    @FXML
+    private TableColumn<Property, Integer> idColumn;
+    @FXML
+    private TableColumn<Property, String> countyColum;
+    @FXML
+    private TableColumn<Property, String> addressColum;
+    @FXML
+    private TableColumn<Property, String> eircodeColum;
+    @FXML
+    private TableColumn<Property, Double> costColumn;
 
     ObservableList<String> county = FXCollections.observableArrayList("Any", "Waterford", "Wexford", "Limerick", "Cork", "Tipperary", "Galway");
     ObservableList<String> minPrice = FXCollections.observableArrayList("No Min", "10000", "15000", "20000", "25000", "30000", "35000", "40000", "45000", "55000");
@@ -94,7 +94,6 @@ public class MainController implements Initializable {
 
 
     public void initialize(URL location, ResourceBundle resources) {
-
         try {
             MyListOfObjects propertiesOne;
             ArrayList<Property> tableProperty = new ArrayList<>();
@@ -144,7 +143,16 @@ public class MainController implements Initializable {
     }
 
     public void handleButtonBack(ActionEvent e) throws Exception {
-        Main.set_pane(0);
+        FXMLLoader loader = new FXMLLoader();
+        loader.setLocation(getClass().getResource("/FXML/SaleSite.fxml"));
+        Parent tableViewParent = loader.load();
+
+        Scene tableViewScene = new Scene(tableViewParent);
+
+        Stage window = (Stage)((Node)e.getSource()).getScene().getWindow();
+
+        window.setScene(tableViewScene);
+        window.show();
     }
 
     public void handleButtonCreateProperty(ActionEvent e) throws Exception {
@@ -176,7 +184,7 @@ public class MainController implements Initializable {
                            txtEircode.setText("");
                            txtprice.setText("");
                            txtfeedback.setText("Property Added");
-                           Main.set_pane(0);
+                           Main.set_pane(7);
                        }
                        else{
                        txtfeedback.setText("Testing  \n");
@@ -199,11 +207,29 @@ public class MainController implements Initializable {
     }*/
 
     public void handleButtonCreatePropertySite(ActionEvent e) throws Exception{
-        Main.set_pane(8);
+        FXMLLoader loader = new FXMLLoader();
+        loader.setLocation(getClass().getResource("/FXML/AgentCreateSaleSite.fxml"));
+        Parent tableViewParent = loader.load();
+
+        Scene tableViewScene = new Scene(tableViewParent);
+
+        Stage window = (Stage)((Node)e.getSource()).getScene().getWindow();
+
+        window.setScene(tableViewScene);
+        window.show();
     }
 
     public void handleButtonViewPropertiesAgent(ActionEvent e) throws Exception{
-        Main.set_pane(9);
+        FXMLLoader loader = new FXMLLoader();
+        loader.setLocation(getClass().getResource("/FXML/AgentUpdateSaleSite.fxml"));
+        Parent tableViewParent = loader.load();
+
+        Scene tableViewScene = new Scene(tableViewParent);
+
+        Stage window = (Stage)((Node)e.getSource()).getScene().getWindow();
+
+        window.setScene(tableViewScene);
+        window.show();
     }
 
    /* public void handleReadBtn(ActionEvent e) throws Exception{
@@ -227,8 +253,18 @@ public class MainController implements Initializable {
 
 
     public void handleButtonBackToAgentSite(ActionEvent e) throws Exception{
-        Main.set_pane(7);
+        FXMLLoader loader = new FXMLLoader();
+        loader.setLocation(getClass().getResource("/FXML/AgentSaleSite.fxml"));
+        Parent tableViewParent = loader.load();
+
+        Scene tableViewScene = new Scene(tableViewParent);
+
+        Stage window = (Stage)((Node)e.getSource()).getScene().getWindow();
+
+        window.setScene(tableViewScene);
+        window.show();
     }
+
 
     public void handleSearchButton(ActionEvent e) throws Exception {
 
@@ -249,15 +285,29 @@ public class MainController implements Initializable {
         tableView.setItems(Newdata);
     }
 
-    public void changeSceneToDetailedViewBtn(ActionEvent e) throws IOException
+   public void displayPropertyBTN(ActionEvent e) throws IOException
     {
         FXMLLoader loader = new FXMLLoader();
-        loader.setLocation(getClass().getResource("/FXML/viewProportiesSite.fxml"));
+        loader.setLocation(getClass().getResource("../FXML/viewProportiesSite.fxml"));
         Parent tableViewParent = loader.load();
+
         Scene tableViewScene = new Scene(tableViewParent);
+
+        //access the controller and call a method
+        ProductViewController controller = loader.getController();
+        Property productToDisplay =(Property) tableView.getSelectionModel().getSelectedItem(); //cast as Product
+        if(productToDisplay == null) //sometimes no Product will have been selected
+            return;
+
+        controller.initData(productToDisplay);
+
         Stage window = (Stage)((Node)e.getSource()).getScene().getWindow();
+
         window.setScene(tableViewScene);
         window.show();
+
+
+
     }
 
 

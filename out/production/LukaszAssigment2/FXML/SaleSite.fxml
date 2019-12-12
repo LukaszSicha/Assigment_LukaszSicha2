@@ -9,21 +9,21 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="500.0" prefWidth="550.0" style="-fx-background-color: white; -fx-border-color: black; -fx-border-width: 2px;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="JavaClasses.MainController">
+<AnchorPane prefHeight="500.0" prefWidth="550.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="JavaClasses.MainController">
     <children>
         <Text layoutX="9.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome to Property Sales Site" textAlignment="CENTER" wrappingWidth="281.86328125">
             <font>
                 <Font size="20.0" />
             </font>
         </Text>
-        <Button layoutX="300.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleButtonLoginAgent" prefHeight="27.0" prefWidth="114.0" style="-fx-background-color: #e6e2da; -fx-border-color: black;" text="Login as Agent" />
+        <Button layoutX="300.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleButtonLoginAgent" prefHeight="27.0" prefWidth="114.0" style="-fx-background-color: #e6e2da; -fx-border-color: black;" stylesheets="@../StyleSheet/myStyleSheet.css" text="Login as Agent" />
         <Button layoutX="416.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleButtonLoginAdmin" prefHeight="27.0" prefWidth="114.0" style="-fx-background-color: #e6e2da; -fx-border-color: black;" text="Login as Admin" />
         <ComboBox fx:id="comboCounty" layoutX="24.0" layoutY="106.0" prefHeight="27.0" prefWidth="106.0" style="-fx-background-color: #e6e2da; -fx-border-color: black;" />
         <ComboBox fx:id="comboMinPrice" layoutX="135.0" layoutY="106.0" prefHeight="27.0" prefWidth="106.0" style="-fx-background-color: #e6e2da; -fx-border-color: black;" />
         <ComboBox fx:id="comboMaxPrice" layoutX="249.0" layoutY="106.0" prefHeight="27.0" prefWidth="106.0" style="-fx-background-color: #e6e2da; -fx-border-color: black;" />
         <ComboBox fx:id="comboPropertyType" layoutX="362.0" layoutY="106.0" prefHeight="27.0" prefWidth="106.0" style="-fx-background-color: #e6e2da; -fx-border-color: black;" />
         <Button layoutX="479.0" layoutY="106.0" mnemonicParsing="false" onAction="#handleSearchButton" style="-fx-background-color: #e6e2da; -fx-border-color: black;" text="Display" />
-        <TextArea fx:id="txtfeedback1" editable="false" layoutX="299.0" layoutY="449.0" prefHeight="37.0" prefWidth="231.0" />
+        <TextArea fx:id="txtfeedback1" editable="false" layoutX="26.0" layoutY="449.0" prefHeight="37.0" prefWidth="511.0" />
       <TableView fx:id="tableView" layoutX="25.0" layoutY="150.0" prefHeight="291.0" prefWidth="511.0">
         <columns>
           <TableColumn fx:id="idColumn" prefWidth="40.0" text="ID" />
@@ -33,7 +33,6 @@
             <TableColumn fx:id="eircodeColum" prefWidth="69.0" text="Eircode" />
         </columns>
       </TableView>
-      <Button layoutX="219.0" layoutY="454.0" mnemonicParsing="false" onAction="#changeSceneToDetailedViewBtn" style="-fx-background-color: #e6e2da; -fx-border-color: black;" text="View" />
-      <Button layoutX="158.0" layoutY="454.0" mnemonicParsing="false" onAction="#handleDeleteButton" style="-fx-background-color: #e6e2da; -fx-border-color: black;" text="Delete" />
+      <Button layoutX="479.0" layoutY="73.0" mnemonicParsing="false" onAction="#displayPropertyBTN" prefHeight="27.0" prefWidth="57.0" style="-fx-background-color: #e6e2da; -fx-border-color: black;" text="View" />
     </children>
 </AnchorPane>

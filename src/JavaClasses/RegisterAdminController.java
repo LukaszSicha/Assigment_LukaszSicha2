@@ -4,7 +4,12 @@ import com.thoughtworks.xstream.XStream;
 import com.thoughtworks.xstream.io.xml.DomDriver;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.*;
+import javafx.stage.Stage;
 
 import java.io.*;
 import java.time.LocalDate;
@@ -46,7 +51,7 @@ public class RegisterAdminController {
     }
 
     private boolean register(String username, String password, String name, String surname, String email, int phoneNumbertxt) {
-        MyListOfObjects admins;
+        MyListOfObjects admins = new MyListOfObjects();
         XStream xstream = new XStream(new DomDriver());
         try {
             ObjectInputStream is = xstream.createObjectInputStream(new FileReader("admins.xml"));
@@ -55,12 +60,12 @@ public class RegisterAdminController {
         }
         catch(FileNotFoundException e) {
             admins =  new MyListOfObjects();
-            txtAreaFeedback.setText("New Password File");
         }
         catch (Exception e) {
-            txtAreaFeedback.setText("Error accessing Password File");
+            txtAreaFeedback.setText("Cannot access password file");
             return false;
         }
+
 
         try {
             Admin admin = new Admin(username, password, name, surname, email, phoneNumbertxt);
@@ -69,17 +74,25 @@ public class RegisterAdminController {
             ObjectOutputStream out = xstream.createObjectOutputStream(new FileWriter("admins.xml"));
             out.writeObject(admins);
             out.close();
-        }
-        catch (Exception e) {
-            txtAreaFeedback.setText("Error writing to Password File");
+            return true;
+        } catch (Exception e) {
+            txtAreaFeedback.setText("ERROR, cannot edit file");
             return false;
         }
-        return true;
     }
 
 
     public void handleHomeBtn(ActionEvent e) throws Exception {
-        Main.set_pane(0);
+        FXMLLoader loader = new FXMLLoader();
+        loader.setLocation(getClass().getResource("/FXML/SaleSale.fxml"));
+        Parent tableViewParent = loader.load();
+
+        Scene tableViewScene = new Scene(tableViewParent);
+
+        Stage window = (Stage)((Node)e.getSource()).getScene().getWindow();
+
+        window.setScene(tableViewScene);
+        window.show();
     }
 
     public void handleButtonAdminRead(ActionEvent e) throws Exception {

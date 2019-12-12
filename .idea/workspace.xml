@@ -2,12 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LukaszAssigment2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/LukaszAssigment2.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LukaszAssigment2/FXML/AgentCreateSaleSite.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LukaszAssigment2/FXML/AgentCreateSaleSite.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LukaszAssigment2/FXML/AgentSaleSite.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LukaszAssigment2/FXML/AgentSaleSite.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LukaszAssigment2/FXML/SaleSite.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LukaszAssigment2/FXML/SaleSite.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LukaszAssigment2/FXML/viewProportiesSite.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LukaszAssigment2/FXML/viewProportiesSite.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LukaszAssigment2/JavaClasses/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LukaszAssigment2/JavaClasses/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/LukaszAssigment2/JavaClasses/MainController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LukaszAssigment2/JavaClasses/MainController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/LukaszAssigment2/JavaClasses/PropertyStore.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LukaszAssigment2/JavaClasses/PropertyStore.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LukaszAssigment2/JavaClasses/RegisterAdminController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LukaszAssigment2/JavaClasses/RegisterAdminController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LukaszAssigment2/JavaClasses/RegisterAgentController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LukaszAssigment2/JavaClasses/RegisterAgentController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/propertyFile.xml" beforeDir="false" afterPath="$PROJECT_DIR$/propertyFile.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FXML/AgentCreateSaleSite.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/FXML/AgentCreateSaleSite.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FXML/AgentSaleSite.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/FXML/AgentSaleSite.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/FXML/SaleSite.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/FXML/SaleSite.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FXML/viewProportiesSite.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/FXML/viewProportiesSite.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/JavaClasses/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaClasses/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/JavaClasses/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaClasses/MainController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/JavaClasses/PropertyStore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaClasses/PropertyStore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/JavaClasses/RegisterAdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaClasses/RegisterAdminController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/JavaClasses/RegisterAgentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaClasses/RegisterAgentController.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -94,38 +110,47 @@
     <session id="-1767747858">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="5" />
+          <entry key="project.closed" value="7" />
           <entry key="project.open.time.3" value="1" />
-          <entry key="project.open.time.4" value="3" />
+          <entry key="project.open.time.4" value="5" />
           <entry key="project.open.time.5" value="1" />
-          <entry key="project.opened" value="5" />
+          <entry key="project.opened" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="fxml" value="12" />
-          <entry key="java" value="1432" />
-          <entry key="xml" value="5" />
+          <entry key="css" value="227" />
+          <entry key="fxml" value="15" />
+          <entry key="java" value="3130" />
+          <entry key="xml" value="25" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="1432" />
-          <entry key="XML" value="17" />
+          <entry key="CSS" value="227" />
+          <entry key="JAVA" value="3130" />
+          <entry key="XML" value="40" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="fxml" value="18" />
-          <entry key="java" value="27" />
-          <entry key="xml" value="9" />
+          <entry key="css" value="4" />
+          <entry key="f" value="1" />
+          <entry key="fxml" value="22" />
+          <entry key="groovy" value="1" />
+          <entry key="java" value="50" />
+          <entry key="jpg" value="3" />
+          <entry key="xml" value="10" />
           <entry key="xsl" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="27" />
-          <entry key="XML" value="28" />
+          <entry key="CSS" value="5" />
+          <entry key="Groovy" value="1" />
+          <entry key="Image" value="3" />
+          <entry key="JAVA" value="50" />
+          <entry key="XML" value="33" />
         </counts>
       </usages-collector>
     </session>
@@ -136,25 +161,35 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/JavaClasses/Main.java">
+        <entry file="file://$PROJECT_DIR$/src/JavaClasses/PropertyStore.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="663">
-              <caret line="46" column="5" selection-start-line="46" selection-start-column="5" selection-end-line="46" selection-end-column="5" />
+            <state relative-caret-position="431">
+              <caret line="41" selection-start-line="41" selection-end-line="41" />
               <folding>
-                <element signature="e#2827#2828#0" expanded="true" />
-                <element signature="e#2855#2856#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/JavaClasses/LoginAgent.java">
+        <entry file="file://$PROJECT_DIR$/src/JavaClasses/Property.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="57" column="9" selection-start-line="57" selection-start-column="9" selection-end-line="57" selection-end-column="9" />
+            <state relative-caret-position="34">
+              <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Testing/JavaClasses/PropertyTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" column="134" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="134" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#354#355#0" expanded="true" />
+                <element signature="e#385#386#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -163,20 +198,56 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/JavaClasses/MainController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="511">
-              <caret line="264" column="37" selection-start-line="264" selection-start-column="37" selection-end-line="264" selection-end-column="37" />
+            <state relative-caret-position="192">
+              <caret line="301" selection-start-line="301" selection-end-line="301" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/JavaClasses/Agent.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Testing/JavaClasses/AgentTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="23" column="1" selection-end-line="23" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/JavaClasses/Admin.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="3" column="16" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/JavaClasses/PropertyStore.java">
+        <entry file="file://$PROJECT_DIR$/Testing/JavaClasses/AdminTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="894">
-              <caret line="139" column="63" lean-forward="true" selection-start-line="139" selection-start-column="63" selection-end-line="139" selection-end-column="63" />
+            <state relative-caret-position="289">
+              <caret line="20" column="34" lean-forward="true" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/JavaClasses/ProductViewController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="220">
+              <caret line="59" column="36" selection-start-line="59" selection-start-column="36" selection-end-line="59" selection-end-column="36" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -185,61 +256,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/FXML/LoginAgent.fxml">
-          <provider editor-type-id="JavaFX-Scene-Builder" />
+        <entry file="file://$PROJECT_DIR$/src/StyleSheet/myStyleSheet.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="236" selection-start-line="12" selection-start-column="236" selection-end-line="12" selection-end-column="236" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/FXML/AgentCreateSaleSite.fxml">
-          <provider editor-type-id="JavaFX-Scene-Builder" />
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="236" selection-start-line="12" selection-start-column="236" selection-end-line="12" selection-end-column="236" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/FXML/viewProportiesSite.fxml">
-          <provider editor-type-id="JavaFX-Scene-Builder" />
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2108">
-              <caret line="124" selection-start-line="124" selection-end-line="124" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/JavaClasses/LoginAdmin.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="48" column="83" selection-start-line="48" selection-start-column="83" selection-end-line="48" selection-end-column="83" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/propertyFile.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1173">
-              <caret line="69" column="13" selection-start-line="69" selection-start-column="13" selection-end-line="69" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/JavaClasses/MyListOfObjects.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1717">
-              <caret line="101" column="22" selection-start-line="101" selection-start-column="22" selection-end-line="101" selection-end-column="22" />
+            <state relative-caret-position="498">
+              <caret line="39" column="1" selection-start-line="39" selection-start-column="1" selection-end-line="39" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -249,9 +269,11 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="XSLT Stylesheet" />
         <option value="FxmlFile" />
+        <option value="Interface" />
+        <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -267,14 +289,17 @@
       <find>Create</find>
       <find>propertyId</find>
       <find>propertyType</find>
-      <find>idColumn</find>
       <find>tableProperty</find>
       <find>tableSearch</find>
+      <find>idColumn</find>
+      <find>changeSceneToDetailedView</find>
+      <find>product</find>
     </findStrings>
     <replaceStrings>
       <replace>propertyLink</replace>
       <replace>tableSearch</replace>
       <replace>searchTBL</replace>
+      <replace>property</replace>
     </replaceStrings>
   </component>
   <component name="FindManager">
@@ -299,30 +324,39 @@
         <option value="$PROJECT_DIR$/src/FXML/LoginAgent.fxml" />
         <option value="$PROJECT_DIR$/src/FXML/RegisterAdmin.fxml" />
         <option value="$PROJECT_DIR$/src/FXML/RegisterAgent.fxml" />
-        <option value="$PROJECT_DIR$/src/FXML/SaleSite.fxml" />
-        <option value="$PROJECT_DIR$/src/JavaClasses/RegisterAdminController.java" />
         <option value="$PROJECT_DIR$/src/FXML/AdminSaleSite.fxml" />
         <option value="$PROJECT_DIR$/src/FXML/AdminReadAgentSite.fxml" />
-        <option value="$PROJECT_DIR$/src/JavaClasses/RegisterAgentController.java" />
         <option value="$PROJECT_DIR$/src/JavaClasses/LoginAgent.java" />
         <option value="$PROJECT_DIR$/admins.xml" />
         <option value="$PROJECT_DIR$/src/JavaClasses/LoginAdmin.java" />
         <option value="$PROJECT_DIR$/src/JavaClasses/MyListOfObjects.java" />
-        <option value="$PROJECT_DIR$/src/FXML/AgentSaleSite.fxml" />
         <option value="$PROJECT_DIR$/src/FXML/AgentUpdateSaleSite.fxml" />
-        <option value="$PROJECT_DIR$/propertyFile.xml" />
-        <option value="$PROJECT_DIR$/src/JavaClasses/Main.java" />
-        <option value="$PROJECT_DIR$/src/FXML/viewProportiesSite.fxml" />
+        <option value="$PROJECT_DIR$/src/Interfaces/MyListOfInterfaces.java" />
         <option value="$PROJECT_DIR$/src/JavaClasses/PropertyStore.java" />
+        <option value="$PROJECT_DIR$/src/CSS/Buttons.css" />
+        <option value="$PROJECT_DIR$/src/FXML/SaleSite.fxml" />
+        <option value="$PROJECT_DIR$/src/CSS/buttonStyle.css" />
+        <option value="$PROJECT_DIR$/src/JavaClasses/Main.java" />
+        <option value="$PROJECT_DIR$/propertyFile.xml" />
+        <option value="$PROJECT_DIR$/src/FXML/AgentSaleSite.fxml" />
+        <option value="$PROJECT_DIR$/src/FXML/viewProportiesSite.fxml" />
+        <option value="$PROJECT_DIR$/src/JavaClasses/RegisterAdminController.java" />
+        <option value="$PROJECT_DIR$/src/JavaClasses/RegisterAgentController.java" />
         <option value="$PROJECT_DIR$/src/JavaClasses/MainController.java" />
+        <option value="$PROJECT_DIR$/src/StyleSheet/myStyleSheet.css" />
+        <option value="$PROJECT_DIR$/src/JavaClasses/ProductViewController.java" />
+        <option value="$PROJECT_DIR$/Testing/JavaClasses/PropertyTest.groovy" />
+        <option value="$PROJECT_DIR$/Testing/JavaClasses/PropertyTest.java" />
+        <option value="$PROJECT_DIR$/Testing/JavaClasses/AgentTest.java" />
+        <option value="$PROJECT_DIR$/Testing/JavaClasses/AdminTest.java" />
       </list>
     </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-109" />
-    <option name="y" value="-14" />
-    <option name="width" value="1934" />
+    <option name="x" value="586" />
+    <option name="y" value="-8" />
+    <option name="width" value="974" />
     <option name="height" value="1047" />
   </component>
   <component name="ProjectId" id="1UFLq7MvIiaCVyz1ieuFE4zFwCg" />
@@ -335,8 +369,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -359,16 +391,48 @@
               <item name="Assigment_LukaszSicha2" type="b2602c69:ProjectViewProjectNode" />
               <item name="Assigment_LukaszSicha2" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Images" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Assigment_LukaszSicha2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Assigment_LukaszSicha2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Interfaces" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Assigment_LukaszSicha2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Assigment_LukaszSicha2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="JavaClasses" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Assigment_LukaszSicha2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Assigment_LukaszSicha2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="StyleSheet" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Assigment_LukaszSicha2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Assigment_LukaszSicha2" type="462c0819:PsiDirectoryNode" />
+              <item name="Testing" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Assigment_LukaszSicha2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Assigment_LukaszSicha2" type="462c0819:PsiDirectoryNode" />
+              <item name="Testing" type="462c0819:PsiDirectoryNode" />
               <item name="JavaClasses" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="GoToClass.includeLibraries" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="GoToFile.includeJavaFiles" value="false" />
@@ -376,11 +440,16 @@
     <property name="MemberChooser.showClasses" value="true" />
     <property name="MemberChooser.sorted" value="false" />
     <property name="OverrideImplement.combined" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="ToolWindowRun.ShowToolbar" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1576089101010" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1576162377837" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Groovy JUnit" value="groovy.util.GroovyTestCase" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="dynamic.classpath" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Assignment2_Semester1_Year2-master" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../elooo" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -388,13 +457,20 @@
     <property name="settings.editor.selected.configurable" value="tasks" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="JavaClasses" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\20083907\Desktop\LukaszAssigment2\src\FXML" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+      <recent name="groovy.util.GroovyTestCase" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\20083907\Desktop\Assigment_LukaszSicha2" />
       <recent name="C:\Users\20083907\Desktop\Assigment_LukaszSicha2\src" />
       <recent name="C:\Users\20083907\Downloads\LukaszAssigment2\src\FXML" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\20083907\Desktop\LukaszAssigment2\src\FXML" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -409,7 +485,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.AdminTest.mainTest">
     <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
       <option name="VMOptions" />
       <option name="arguments" />
@@ -450,6 +526,66 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="AdminTest.mainTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="LukaszAssigment2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="JavaClasses.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="JavaClasses" />
+      <option name="MAIN_CLASS_NAME" value="JavaClasses.AdminTest" />
+      <option name="METHOD_NAME" value="mainTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AgentTest.mainTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="LukaszAssigment2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="JavaClasses.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="JavaClasses" />
+      <option name="MAIN_CLASS_NAME" value="JavaClasses.AgentTest" />
+      <option name="METHOD_NAME" value="mainTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PropertyTest.mainTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="LukaszAssigment2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="JavaClasses.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="JavaClasses" />
+      <option name="MAIN_CLASS_NAME" value="JavaClasses.PropertyTest" />
+      <option name="METHOD_NAME" value="mainTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="TEST_SEARCH_SCOPE">
@@ -479,6 +615,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.Main" />
+      <item itemvalue="JUnit.PropertyTest.mainTest" />
+      <item itemvalue="JUnit.AgentTest.mainTest" />
+      <item itemvalue="JUnit.AdminTest.mainTest" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.AdminTest.mainTest" />
+        <item itemvalue="JUnit.AgentTest.mainTest" />
+        <item itemvalue="JUnit.PropertyTest.mainTest" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -494,14 +643,25 @@
     </task>
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="PropertyTest_mainTest - 2019.12.12 at 14h 46m 49s.xml">
+      <configuration name="PropertyTest.mainTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AgentTest_mainTest - 2019.12.12 at 14h 50m 34s.xml">
+      <configuration name="AgentTest.mainTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AdminTest_mainTest - 2019.12.12 at 14h 51m 54s.xml">
+      <configuration name="AdminTest.mainTest" configurationId="JUnit" />
+    </history-entry>
+  </component>
   <component name="TimeTrackingManager">
     <option name="totallyTimeSpent" value="1302000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26332623" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4992" visible="true" weight="0.19989339" />
+      <window_info id="Structure" order="1" sideWeight="0.5008" side_tool="true" weight="0.19989339" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
@@ -509,7 +669,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.329718" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.31995663" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32212582" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -519,7 +679,7 @@
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.329718" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.24972737" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
@@ -528,16 +688,16 @@
       <window_info anchor="right" id="Maven Projects" order="7" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25266525" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4992" visible="true" weight="0.19989339" />
+      <window_info id="Structure" order="1" sideWeight="0.5008" side_tool="true" weight="0.19989339" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.329718" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.329718" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32212582" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -547,7 +707,7 @@
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.329718" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.24972737" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
@@ -556,6 +716,9 @@
       <window_info anchor="right" id="Maven Projects" order="7" />
     </layout-to-restore>
   </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.css" />
+  </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
@@ -563,93 +726,55 @@
     <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
   </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/FXML/sample.fxml" />
     <entry file="file://$PROJECT_DIR$/src/FXML/ViewerSaleSite.xsl" />
     <entry file="file://$PROJECT_DIR$/src/JavaClasses/PropertyController.java" />
-    <entry file="file://$PROJECT_DIR$/src/FXML/Anchor.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/FXML/LoginAdmin.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="12" column="236" selection-start-line="12" selection-start-column="236" selection-end-line="12" selection-end-column="236" />
         </state>
       </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/FXML/AdminCreateAgentSite.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="236" selection-start-line="10" selection-start-column="236" selection-end-line="10" selection-end-column="236" />
         </state>
       </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/FXML/ViewerSaleSite.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
           <caret line="25" column="15" selection-start-line="25" selection-start-column="15" selection-end-line="25" selection-end-column="15" />
         </state>
       </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/FXML/AdminSaleSite.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
           <caret line="22" column="111" selection-start-line="22" selection-start-column="111" selection-end-line="22" selection-end-column="111" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/JavaClasses/Agent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="11" column="21" lean-forward="true" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
-        </state>
-      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/FXML/AdminReadAgentSite.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
           <caret line="39" column="110" selection-start-line="39" selection-start-column="110" selection-end-line="39" selection-end-column="110" />
         </state>
       </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/admins.xml" />
-    <entry file="file://$PROJECT_DIR$/src/JavaClasses/RegisterAgentController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="383">
-          <caret line="51" column="9" lean-forward="true" selection-start-line="51" selection-start-column="9" selection-end-line="51" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/JavaClasses/Controller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/JavaClasses/Admin.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/JavaClasses/RegisterAdminController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="54" column="9" lean-forward="true" selection-start-line="54" selection-start-column="9" selection-end-line="54" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/propertyFile.xml.xsl" />
     <entry file="file://$PROJECT_DIR$/admins.xml">
       <provider selected="true" editor-type-id="text-editor">
@@ -659,27 +784,20 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/FXML/RegisterAdmin.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="493">
           <caret line="29" column="84" selection-start-line="29" selection-start-column="84" selection-end-line="29" selection-end-column="84" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/JavaClasses/Property.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="27" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
-        </state>
-      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/FXML/RegisterAgent.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="833">
           <caret line="49" selection-start-line="49" selection-end-line="49" />
         </state>
       </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
     <entry file="file://$PROJECT_DIR$/agents.xml">
       <provider selected="true" editor-type-id="text-editor">
@@ -688,51 +806,53 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/FXML/AgentSaleSite.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="102" selection-start-line="18" selection-start-column="102" selection-end-line="18" selection-end-column="102" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/FXML/AgentUpdateSaleSite.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
           <caret line="115" column="126" selection-start-line="115" selection-start-column="126" selection-end-line="115" selection-end-column="126" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/FXML/SaleSite.fxml">
       <provider editor-type-id="JavaFX-Scene-Builder" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="35" column="15" lean-forward="true" selection-start-line="35" selection-start-column="15" selection-end-line="35" selection-end-column="15" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/FXML/LoginAgent.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="12" column="236" selection-start-line="12" selection-start-column="236" selection-end-line="12" selection-end-column="236" />
         </state>
       </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/FXML/AgentCreateSaleSite.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="12" column="236" selection-start-line="12" selection-start-column="236" selection-end-line="12" selection-end-column="236" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/FXML/viewProportiesSite.fxml">
       <provider editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Interfaces/MyListOfInterfaces.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2108">
-          <caret line="124" selection-start-line="124" selection-end-line="124" />
+        <state relative-caret-position="119">
+          <caret line="7" column="49" selection-start-line="7" selection-start-column="49" selection-end-line="7" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/JavaClasses/MyListOfObjects.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="566">
+          <caret line="101" column="22" selection-start-line="101" selection-start-column="22" selection-end-line="101" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CSS/Buttons.css" />
+    <entry file="file://$PROJECT_DIR$/src/CSS/buttonStyle.css" />
+    <entry file="file://$PROJECT_DIR$/src/JavaClasses/LoginAgent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="57" column="9" selection-start-line="57" selection-start-column="9" selection-end-line="57" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -746,35 +866,80 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/propertyFile.xml">
+    <entry file="file://$PROJECT_DIR$/src/JavaClasses/Controller.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1173">
-          <caret line="69" column="13" selection-start-line="69" selection-start-column="13" selection-end-line="69" selection-end-column="13" />
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/JavaClasses/MyListOfObjects.java">
+    <entry file="file://$PROJECT_DIR$/src/FXML/Anchor.fxml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1717">
-          <caret line="101" column="22" selection-start-line="101" selection-start-column="22" selection-end-line="101" selection-end-column="22" />
+        <state relative-caret-position="136">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/propertyFile.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="110" column="22" selection-start-line="110" selection-start-column="22" selection-end-line="110" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FXML/AgentSaleSite.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="28" column="99" selection-start-line="28" selection-start-column="99" selection-end-line="28" selection-end-column="99" />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FXML/viewProportiesSite.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="262">
+          <caret line="110" column="106" selection-start-line="110" selection-start-column="106" selection-end-line="110" selection-end-column="106" />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FXML/SaleSite.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="35" column="98" selection-start-line="35" selection-start-column="98" selection-end-line="35" selection-end-column="98" />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/JavaClasses/RegisterAdminController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="85" column="8" selection-start-line="85" selection-start-column="8" selection-end-line="94" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/JavaClasses/RegisterAgentController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="136" column="65" selection-start-line="136" selection-start-column="65" selection-end-line="136" selection-end-column="65" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/JavaClasses/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
-          <caret line="46" column="5" selection-start-line="46" selection-start-column="5" selection-end-line="46" selection-end-column="5" />
-          <folding>
-            <element signature="e#2827#2828#0" expanded="true" />
-            <element signature="e#2855#2856#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="356">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/JavaClasses/LoginAgent.java">
+    <entry file="file://$PROJECT_DIR$/src/JavaClasses/PropertyStore.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="57" column="9" selection-start-line="57" selection-start-column="9" selection-end-line="57" selection-end-column="9" />
+        <state relative-caret-position="431">
+          <caret line="41" selection-start-line="41" selection-end-line="41" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -783,21 +948,91 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/JavaClasses/MainController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="511">
-          <caret line="264" column="37" selection-start-line="264" selection-start-column="37" selection-end-line="264" selection-end-column="37" />
+        <state relative-caret-position="192">
+          <caret line="301" selection-start-line="301" selection-end-line="301" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/JavaClasses/PropertyStore.java">
+    <entry file="file://$PROJECT_DIR$/src/Images/house7.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Images/house2.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Images/house1.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/StyleSheet/myStyleSheet.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="894">
-          <caret line="139" column="63" lean-forward="true" selection-start-line="139" selection-start-column="63" selection-end-line="139" selection-end-column="63" />
+        <state relative-caret-position="498">
+          <caret line="39" column="1" selection-start-line="39" selection-start-column="1" selection-end-line="39" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/JavaClasses/ProductViewController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="59" column="36" selection-start-line="59" selection-start-column="36" selection-end-line="59" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Testing/JavaClasses/PropertyTest.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" column="5" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/JavaClasses/Property.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/JavaClasses/Agent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Testing/JavaClasses/PropertyTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="134" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="134" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#354#355#0" expanded="true" />
+            <element signature="e#385#386#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/JavaClasses/Admin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="16" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Testing/JavaClasses/AgentTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="23" column="1" selection-end-line="23" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Testing/JavaClasses/AdminTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="20" column="34" lean-forward="true" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
         </state>
       </provider>
     </entry>

@@ -1,0 +1,44 @@
+.button{
+-fx-background-color: #e6e2da;
+-fx-border-color: black;
+font-size: 8px;
+}
+
+.comboBox{
+-fx-background-color: #e6e2da;
+-fx-border-color: black;
+font-size: 8px;
+}
+
+.label {
+    -fx-font: 16px "Arial";
+    -fx-text-fill: dark-primary-color;
+    -fx-text-alignment: left;
+}
+
+.choice-box {
+    -fx-font: 16px "Arial";
+    -fx-text-fill: #616161;
+    -fx-text-alignment: left;
+    -fx-background-color: accent-color;
+}
+
+#choice-box2 {
+    -fx-font: 16px "Arial";
+    -fx-text-fill: #616161;
+    -fx-text-alignment: left;
+    -fx-background-color: accent-color;
+}
+
+#choice-box3 {
+    -fx-font: 16px "Arial";
+    -fx-text-fill: #616161;
+    -fx-text-alignment: left;
+    -fx-background-color: accent-color;
+}
+
+#label {
+    -fx-font: 16px "Arial";
+    -fx-text-fill: dark-primary-color;
+    -fx-text-alignment: left;
+}

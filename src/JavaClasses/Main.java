@@ -38,6 +38,9 @@ public class Main extends Application {
         primaryStage.setTitle("Property Sale Site");
         primaryStage.setScene(new Scene(root, 550, 500));
         primaryStage.show();
+        Main.set_pane(0);
+
+
     }
 
     private void init_app(){
